@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.5.x - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-11-12 12:13:10+0000\n"
+"PO-Revision-Date: 2020-12-17 14:45:46+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -4430,8 +4430,8 @@ msgstr "Emplacement du thème"
 #: wp-admin/nav-menus.php:725
 msgid "Your theme supports %s menu. Select which menu appears in each location."
 msgid_plural "Your theme supports %s menus. Select which menu appears in each location."
-msgstr[0] "Votre thème peut utiliser %s menu. Sélectionnez le menu qui devra apparaître dans l’emplacement."
-msgstr[1] "Votre thème peut utiliser %s menus. Sélectionnez les menu qui devront apparaître dans chaque emplacement."
+msgstr[0] "Votre thème peut utiliser %s menu. Sélectionnez le menu qui devra apparaître à chaque emplacement."
+msgstr[1] "Votre thème peut utiliser %s menus. Sélectionnez les menus qui devront apparaître à chaque emplacement."
 
 #: wp-admin/nav-menus.php:721
 msgid "Your theme supports one menu. Select which menu you would like to use."

@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Themes - Twenty Twenty package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-08-14 04:35:26+0000\n"
+"PO-Revision-Date: 2021-01-10 22:30:31+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -13,11 +13,128 @@ msgstr ""
 
 #. Description of the theme
 msgid "Our default theme for 2020 is designed to take full advantage of the flexibility of the block editor. Organizations and businesses have the ability to create dynamic landing pages with endless layouts using the group and column blocks. The centered content column and fine-tuned typography also makes it perfect for traditional blogs. Complete editor styles give you a good idea of what your content will look like, even before you publish. You can give your site a personal touch by changing the background colors and the accent color in the Customizer. The colors of all elements on your site are automatically calculated based on the colors you pick, ensuring a high, accessible color contrast for your visitors."
-msgstr "Notre thème par défaut pour 2020 est conçu pour tirer pleinement parti de la flexibilité de l'éditeur de bloc. Les organisations et les entreprises ont la possibilité de créer des pages d’atterrissage dynamiques avec des mises en page sans fin à l'aide des blocs de groupe et de colonne. La colonne de contenu centrée et la typographie affinée le rendent également parfait pour les blogs traditionnels. Les styles complets de l’éditeur vous donnent une bonne idée de ce à quoi votre contenu ressemblera, avant même de publier. Vous pouvez donner à votre site une touche personnelle en changeant les couleurs d’arrière-plan et la couleur accentuée dans l’outil de personnalisation. Les couleurs de tous les éléments de votre site sont automatiquement calculées en fonction des couleurs que vous choisissez, assurant un contraste de couleurs élevé et accessible pour vos visiteurs."
+msgstr "Notre thème par défaut pour 2020 est conçu pour tirer pleinement parti de la flexibilité de l’éditeur de bloc. Les organisations et les entreprises ont la possibilité de créer des pages d’atterrissage dynamiques avec des mises en page sans fin à l’aide des blocs de groupe et de colonne. La colonne de contenu centrée et la typographie affinée le rendent également parfait pour les blogs traditionnels. Les styles complets de l’éditeur vous donnent une bonne idée de ce à quoi votre contenu ressemblera, avant même de publier. Vous pouvez donner à votre site une touche personnelle en changeant les couleurs d’arrière-plan et la couleur accentuée dans l’outil de personnalisation. Les couleurs de tous les éléments de votre site sont automatiquement calculées en fonction des couleurs que vous choisissez, assurant un contraste de couleurs élevé et accessible pour vos visiteurs."
 
 #. Theme Name of the theme
+#: inc/block-patterns.php:20
 msgid "Twenty Twenty"
 msgstr "Twenty Twenty"
+
+#: classes/class-twentytwenty-customize.php:126
+msgctxt "color"
+msgid "Custom"
+msgstr "Personnalisée"
+
+#: classes/class-twentytwenty-customize.php:125
+msgctxt "color"
+msgid "Default"
+msgstr "Par défaut"
+
+#: inc/block-patterns.php:197
+msgid "With seven floors of striking architecture, UMoMA shows exhibitions of international contemporary art, sometimes along with art historical retrospectives. Existential, political, and philosophical issues are intrinsic to our program. As visitor, you are invited to guided tours artist talks, lectures, film screenings, and other events with free admission."
+msgstr "Avec sept étages et une architecture sublime, le E-Mucem expose des œuvres d’art internationales, parfois de concert avec des rétrospectives historiques. Les expériences existentielles, politiques et philosophiques sont intrinsèquement liées à notre programmation. En tant que visiteuse ou visiteur, laissez vous tenter par nos visites guidées, nos conférences, projections de films et par d’autres évènements en accès libre."
+
+#: inc/block-patterns.php:194
+msgid "The Premier Destination for Modern Art in Sweden"
+msgstr "La première destination en France en matière d’art moderne"
+
+#: inc/block-patterns.php:187
+msgid "Introduction"
+msgstr "Introduction"
+
+#: inc/block-patterns.php:157 inc/block-patterns.php:171
+msgid "August 1 — December 1"
+msgstr "Du 1er août au 1er décembre"
+
+#: inc/block-patterns.php:151 inc/block-patterns.php:165
+msgid "Abstract Rectangles"
+msgstr "Rectangles abstraits"
+
+#: inc/block-patterns.php:142
+msgid "Featured Content"
+msgstr "Contenu mis en avant"
+
+#: inc/block-patterns.php:128
+msgid "<em>Price</em><br>Included"
+msgstr "<em>Inclut</em><br>dans le prix"
+
+#: inc/block-patterns.php:123
+msgid "<em>Location</em><br>Exhibit Hall B"
+msgstr "<em>Emplacement</em><br>Allée d’exposition B"
+
+#: inc/block-patterns.php:118
+msgid "<em>Dates</em><br>Aug 1 — Dec 1"
+msgstr "<em>Dates</em><br>Du 1er août au 1er décembre"
+
+#: inc/block-patterns.php:108
+msgid "Event Details"
+msgstr "Détails de l’évènement"
+
+#: inc/block-patterns.php:93
+msgid "Shop Now"
+msgstr "Acheter maintenant"
+
+#: inc/block-patterns.php:89
+msgid "An awe-inspiring collection of books, prints, and gifts from our exhibitions."
+msgstr "Un collection de livres, affiches et autres souvenirs inspirants provenant de nos expositions."
+
+#: inc/block-patterns.php:86
+msgid "The Store"
+msgstr "La boutique"
+
+#: inc/block-patterns.php:74
+msgid "Award-winning exhibitions featuring internationally-renowned artists."
+msgstr "Des expositions mettant en scènes des artistes reconnu·e·s internationalement."
+
+#: inc/block-patterns.php:71
+msgid "The Museum"
+msgstr "Le musée"
+
+#: inc/block-patterns.php:61
+msgid "Double Call to Action"
+msgstr "Double appel à l’action"
+
+#: inc/block-patterns.php:48
+msgid "Become a Member"
+msgstr "Devenez membre"
+
+#: inc/block-patterns.php:42
+msgid "Support the Museum and Get Exclusive Offers"
+msgstr "Soutenez le musée de obtenez des offres exclusives"
+
+#: inc/block-patterns.php:33
+msgid "Call to Action"
+msgstr "Appel à l’action"
+
+#: template-parts/modal-menu.php:73
+msgctxt "menu"
+msgid "Mobile"
+msgstr "Mobile"
+
+#: template-parts/modal-menu.php:48
+msgctxt "menu"
+msgid "Expanded"
+msgstr "Déplié"
+
+#: header.php:88
+msgctxt "menu"
+msgid "Horizontal"
+msgstr "Horizontal"
+
+#: header.php:53 header.php:157
+msgctxt "toggle text"
+msgid "Search"
+msgstr "Recherche"
+
+#: functions.php:498
+msgctxt "color"
+msgid "Secondary"
+msgstr "Secondaire"
+
+#: functions.php:493
+msgctxt "color"
+msgid "Primary"
+msgstr "Principal"
 
 #: index.php:51
 msgid "Nothing Found"
@@ -45,7 +162,7 @@ msgstr "Dans"
 msgid "Join the Club"
 msgstr "Rejoignez le club"
 
-#: inc/starter-content.php:148
+#: inc/block-patterns.php:45 inc/starter-content.php:148
 msgid "Members get access to exclusive exhibits and sales. Our memberships cost $99.99 and are billed annually."
 msgstr "Les adhérent·es ont accès à des expositions et des ventes exclusives. Notre abonnement coûtent $99.99 et est facturé annuellement."
 
@@ -69,7 +186,7 @@ msgstr "« Les cyborgs, comme l’a fait remarquer la philosophe Donna Haraway,
 msgid "From Signac to Matisse"
 msgstr "De Signac à Matisse"
 
-#: inc/starter-content.php:99
+#: inc/block-patterns.php:168 inc/starter-content.php:99
 msgid "The Life I Deserve"
 msgstr "La vie que je mérite"
 
@@ -81,8 +198,10 @@ msgstr "1er octobre au 1er décembre"
 msgid "Theatre of Operations"
 msgstr "Théâtre des opérations"
 
-#: inc/starter-content.php:73 inc/starter-content.php:88
-#: inc/starter-content.php:105 inc/starter-content.php:120
+#: inc/block-patterns.php:78 inc/block-patterns.php:160
+#: inc/block-patterns.php:174 inc/starter-content.php:73
+#: inc/starter-content.php:88 inc/starter-content.php:105
+#: inc/starter-content.php:120
 msgid "Read More"
 msgstr "Lire la suite"
 
@@ -90,7 +209,7 @@ msgstr "Lire la suite"
 msgid "August 1 -- December 1"
 msgstr "1er août au 1er décembre"
 
-#: inc/starter-content.php:67
+#: inc/block-patterns.php:154 inc/starter-content.php:67
 msgid "Works and Days"
 msgstr "Travaux et jours"
 
@@ -116,7 +235,7 @@ msgstr "Couleur du texte de superposition"
 
 #: classes/class-twentytwenty-customize.php:353
 msgid "The color used for the overlay. Defaults to the accent color."
-msgstr "La couleur utilisée pour la superposition. La couleur par défaut est la couleur d'accentuation."
+msgstr "La couleur utilisée pour la superposition. La couleur par défaut est la couleur d’accentuation."
 
 #: classes/class-twentytwenty-customize.php:352
 msgid "Overlay Background Color"
@@ -130,19 +249,11 @@ msgstr "Réglages pour le modèle de page « Modèle avec bannière ». Utilis
 msgid "Apply a custom color for links, buttons, featured images."
 msgstr "Appliquer une couleur personnalisée aux boutons, liens, images mises en avant."
 
-#: classes/class-twentytwenty-customize.php:126
-msgid "Custom"
-msgstr "Personnalisé"
-
-#: classes/class-twentytwenty-customize.php:125
-msgid "Default"
-msgstr "Par défaut"
-
 #: classes/class-twentytwenty-customize.php:123
 msgid "Primary Color"
 msgstr "Couleur principale"
 
-#: searchform.php:24 template-parts/modal-search.php:20
+#: template-parts/modal-search.php:20 searchform.php:24
 msgid "Search for:"
 msgstr "Rechercher :"
 
@@ -167,7 +278,8 @@ msgstr "Haut %s"
 msgid "To the top %s"
 msgstr "Vers le haut %s"
 
-#. translators: Copyright date format, see https://www.php.net/date
+#. translators: Copyright date format, see
+#. https://www.php.net/manual/datetime.format.php
 #: footer.php:25
 msgctxt "copyright date format"
 msgid "Y"
@@ -201,14 +313,6 @@ msgstr "Fermer la recherche"
 msgid "Expanded Social links"
 msgstr "Liens de réseaux sociaux étendus"
 
-#: template-parts/modal-menu.php:73
-msgid "Mobile"
-msgstr "Mobile"
-
-#: template-parts/modal-menu.php:48
-msgid "Expanded"
-msgstr "Développé"
-
 #: template-parts/modal-menu.php:21
 msgid "Close Menu"
 msgstr "Fermer le menu"
@@ -222,15 +326,15 @@ msgid "Footer"
 msgstr "Pied de page"
 
 #. translators: %s: Author name.
-#: inc/template-tags.php:357 template-parts/entry-author-bio.php:20
+#: template-parts/entry-author-bio.php:20 inc/template-tags.php:357
 msgid "By %s"
 msgstr "Par %s"
 
-#: template-parts/content-cover.php:138 template-parts/content.php:48
+#: template-parts/content.php:48 template-parts/content-cover.php:138
 msgid "Pages:"
 msgstr "Pages :"
 
-#: template-parts/content-cover.php:138 template-parts/content.php:48
+#: template-parts/content.php:48 template-parts/content-cover.php:138
 msgid "Page"
 msgstr "Page"
 
@@ -269,8 +373,8 @@ msgstr "Article épinglé"
 msgid "Tags"
 msgstr "Étiquettes"
 
-#: inc/template-tags.php:392 template-parts/entry-header.php:36
-#: template-parts/content-cover.php:70
+#: template-parts/content-cover.php:70 template-parts/entry-header.php:36
+#: inc/template-tags.php:392
 msgid "Categories"
 msgstr "Catégories"
 
@@ -286,119 +390,107 @@ msgstr "Auteur de l’article"
 msgid "Social Links Menu"
 msgstr "Menu des liens de réseaux sociaux"
 
-#: inc/starter-content.php:177 inc/starter-content.php:187 functions.php:489
+#: inc/starter-content.php:177 inc/starter-content.php:187
 msgid "Primary"
 msgstr "Principal"
-
-#: header.php:88
-msgid "Horizontal"
-msgstr "Horizontal"
 
 #: header.php:76 header.php:137
 msgid "Menu"
 msgstr "Menu"
 
-#: header.php:53 header.php:157
-msgid "Search"
-msgstr "Rechercher"
-
 #: template-parts/content.php:36
 msgid "Continue reading"
 msgstr "Lire la suite"
 
-#: functions.php:546
+#: functions.php:550
 msgctxt "Short name of the larger font size in the block editor."
 msgid "XL"
 msgstr "XL"
 
-#: functions.php:545
+#: functions.php:549
 msgctxt "Name of the larger font size in the block editor"
 msgid "Larger"
 msgstr "Très grand"
 
-#: functions.php:540
+#: functions.php:544
 msgctxt "Short name of the large font size in the block editor."
 msgid "L"
 msgstr "L"
 
-#: functions.php:539
+#: functions.php:543
 msgctxt "Name of the large font size in the block editor"
 msgid "Large"
 msgstr "Grand"
 
-#: functions.php:534
+#: functions.php:538
 msgctxt "Short name of the regular font size in the block editor."
 msgid "M"
 msgstr "L"
 
-#: functions.php:533
+#: functions.php:537
 msgctxt "Name of the regular font size in the block editor"
 msgid "Regular"
 msgstr "Normal"
 
-#: functions.php:528
+#: functions.php:532
 msgctxt "Short name of the small font size in the block editor."
 msgid "S"
 msgstr "S"
 
-#: functions.php:527
+#: functions.php:531
 msgctxt "Name of the small font size in the block editor"
 msgid "Small"
 msgstr "Petit"
 
-#: functions.php:512
+#: functions.php:516
 msgid "Background Color"
 msgstr "Couleur de l’arrière-plan"
 
-#: functions.php:499
+#: functions.php:503
 msgid "Subtle Background"
 msgstr "Arrière-plan subtil"
 
-#: functions.php:494
-msgid "Secondary"
-msgstr "Secondaire"
-
-#: functions.php:484
+#: functions.php:488
 msgid "Accent Color"
 msgstr "Couleur de contraste"
 
-#: functions.php:379
+#: functions.php:383
 msgid "Widgets in this area will be displayed in the second column in the footer."
 msgstr "Les widgets de cette partie seront affichés dans la seconde colonne du pied de page."
 
-#: functions.php:377
+#: functions.php:381
 msgid "Footer #2"
 msgstr "Pied de page #2"
 
-#: functions.php:367
+#: functions.php:371
 msgid "Widgets in this area will be displayed in the first column in the footer."
 msgstr "Les widgets de cette partie seront affichés dans la première colonne du pied de page."
 
-#: functions.php:365
+#: functions.php:369
 msgid "Footer #1"
 msgstr "Pied de page #1"
 
-#: functions.php:340
+#: functions.php:344
 msgid "Skip to the content"
 msgstr "Aller au contenu"
 
-#: functions.php:262
+#: functions.php:266
 msgid "Social Menu"
 msgstr "Menu réseaux sociaux"
 
-#: functions.php:261
+#: functions.php:265
 msgid "Footer Menu"
 msgstr "Menu du pied de page"
 
-#: functions.php:260
+#: functions.php:264
 msgid "Mobile Menu"
 msgstr "Menu sur mobile"
 
-#: functions.php:259
+#: functions.php:263
 msgid "Desktop Expanded Menu"
 msgstr "Menu étendu grands écrans"
 
-#: functions.php:258
+#: functions.php:262
 msgid "Desktop Horizontal Menu"
 msgstr "Menu horizontal grand écrans"
 
@@ -449,20 +541,20 @@ msgstr "Afficher le sous-menu"
 msgid "#%d (no title)"
 msgstr "#%d (sans titre)"
 
-#: classes/class-twentytwenty-walker-comment.php:127
+#: classes/class-twentytwenty-walker-comment.php:133
 msgid "By Post Author"
 msgstr "Par auteur de l’article"
 
-#: classes/class-twentytwenty-walker-comment.php:92
+#: classes/class-twentytwenty-walker-comment.php:98
 msgid "Your comment is awaiting moderation."
 msgstr "Votre commentaire est en attente de modération."
 
-#: classes/class-twentytwenty-walker-comment.php:77
+#: classes/class-twentytwenty-walker-comment.php:82
 msgid "Edit"
 msgstr "Modifier"
 
 #. translators: 1: Comment date, 2: Comment time.
-#: classes/class-twentytwenty-walker-comment.php:69
+#: classes/class-twentytwenty-walker-comment.php:68
 msgid "%1$s at %2$s"
 msgstr "%1$s à %2$s"
 
@@ -497,11 +589,11 @@ msgstr "Le texte complet"
 
 #: classes/class-twentytwenty-customize.php:267
 msgid "On archive pages, posts show:"
-msgstr "Sur les pages d'archive, les articles affichent :"
+msgstr "Sur les pages d’archive, les articles affichent :"
 
 #: classes/class-twentytwenty-customize.php:225
 msgid "Show search in header"
-msgstr "Afficher la recherche dans l'en-tête"
+msgstr "Afficher la recherche dans l’en-tête"
 
 #: classes/class-twentytwenty-customize.php:202
 msgid "Theme Options"
