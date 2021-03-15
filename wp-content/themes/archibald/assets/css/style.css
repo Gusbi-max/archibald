@@ -1,0 +1,70 @@
+/* Variables */
+:root {
+  --blue: #02253A;
+  --blue-light: #AFBED1;
+  --red: #DC241F;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+
+header {
+  height: 120px;
+  box-shadow: 0 3px 6px grey;
+}
+
+.line-blue {
+  height: 15px;
+  background-color: var(--blue);
+  margin-bottom: 2px;
+}
+
+.line-red {
+  height: 4px;
+  background-color: var(--red);  
+}
+
+.navigation {
+  height: 100px;
+  padding: 10px 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 80%;
+}
+
+.menu {
+  height: 80%;
+  display: flex;
+  align-items: center;
+}
+
+.menu-burger {
+  width: 50px;
+  height: 50px;
+  padding: 6px;
+  background-color:var(--blue-light);
+  border-radius: 12px;
+  box-shadow: 0 1px 6px grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.burger-line {
+  width: 60%;
+  height: 2px;
+  background-color: var(--blue);
+}
+
+.line-middle {
+  margin: 8px 0;
+}
+
