@@ -32,10 +32,6 @@ body {
   width: 100vw;
 }
 
-ul {
-
-}
-
 li {
   margin-inline-start: 16px;
 }
@@ -53,12 +49,16 @@ h2, h3 {
 }
 
 h2 {
-  width: 100%;
-  font-size: 2rem;
+  font-size: 1.8rem;
+  font-weight: bolder;
 }
 
 h3 {
   font-size: 1.5rem;
+}
+
+.no-margin-bottom {
+  margin-bottom: 0;
 }
 
 .container {
@@ -72,7 +72,7 @@ h3 {
 
 .wp-block-cover__inner-container {
   width: 100% !important;
-  margin: 35px;
+  margin: 35px 8%;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -87,13 +87,25 @@ h3 {
 }
 
 .wp-block-group {
-  margin: 35px;
+  margin: 35px  8%;
 }
 
 .wp-block-group__inner-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+}
+
+.wp-block-group__inner-container > h2, h3, ul {
+  width: 100%;
+}
+
+.banner-text-left {
+  justify-content: flex-start;
+}
+
+.banner-text-right {
+  justify-content: flex-end;
 }
 
 .bubble-link-light {
@@ -111,6 +123,7 @@ h3 {
   background-color: var(--blue-light);
   color: #FFFFFF;
   padding: 4px;
+  margin: 16px auto;
   border-radius: 12px;
   transition: all .5s ease;
 }
@@ -189,5 +202,36 @@ header {
 
 .typewriter {
   font-family: "AmericanTypwrterITCW01--731025";
-  margin: 16px 35px;
+  font-size: 1.2rem;
+  margin: 16px 8%;
+}
+
+.hashtag {
+  font-family: "AmericanTypwrterITCW01--731025";
+  font-weight: 900;
+  font-size: 5vw;
+  letter-spacing: 2vw;
+  margin: 3vw auto;
+}
+
+@media screen and (min-width: 500px) {
+
+  .banner-text-right > .wp-block-cover__inner-container {
+    margin-left: 30%;
+    max-width: 350px;
+  }
+
+  .banner-text-left > .wp-block-cover__inner-container {
+    margin-right: 30%;
+    max-width: 350px;
+  }
+
+  .wp-block-cover__inner-container {
+    margin: 35px 20%;
+  }
+
+  .wp-block-group {
+    margin: 35px 20%;
+  }
+
 }
