@@ -133,6 +133,13 @@ h3 {
   color: var(--blue) !important;
 }
 
+.main-banner {
+  height: 50vw;
+  min-height: 300px;
+  max-height: 650px;
+  background-size: contain;
+}
+
 /* Header */
 
 header {
@@ -202,7 +209,7 @@ header {
 
 .typewriter {
   font-family: "AmericanTypwrterITCW01--731025";
-  font-size: 1.2rem;
+  font-size: 4vw;
   margin: 16px 8%;
 }
 
@@ -215,6 +222,8 @@ header {
 }
 
 @media screen and (min-width: 500px) {
+
+  
 
   .banner-text-right > .wp-block-cover__inner-container {
     margin-left: 30%;
@@ -233,5 +242,16 @@ header {
   .wp-block-group {
     margin: 35px 20%;
   }
+}
 
+@media screen and (min-width: 700px) {
+  .main-banner {
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .typewriter {
+    font-size: 30px;
+    margin: 16px 20%;
+  }
 }
