@@ -1,8 +1,22 @@
+/* Imports */
+@font-face { 
+  font-family: "AmericanTypwrterITCW01--731025"; 
+  src: url("https://static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/0c0f4d28-4c13-4e84-9a36-e63cd529ae86.woff") format("woff");
+}
+
+@font-face { 
+  font-family: "Lato-Light"; 
+  src: url("https://fonts.gstatic.com/s/lato/v14/2hXzmNaFRuKTSBR9nRGO-A.woff2") format("woff2");
+}
+
+
 /* Variables */
 :root {
   --blue: #02253A;
   --blue-light: #AFBED1;
+  --white-light: #FFFFFF55;
   --red: #DC241F;
+  --header-height: 120px;
 }
 
 * {
@@ -10,11 +24,68 @@
   padding: 0;
 }
 
+body {
+  width: 100vw;
+}
+
+ul {
+  margin-inline-start: 16px;
+}
+
+li {
+  margin-left: 16px;
+}
+
+p, h2, h3 {
+  margin: 16px;
+}
+
+p, li {
+  font-family: "Lato-Light";
+}
+
+h2, h3 {
+  font-family: "AmericanTypwrterITCW01--731025";
+}
+
+.container {
+  width: 100%;
+  margin-top: calc(var(--header-height));
+}
+
+.wp-block-cover__inner-container {
+  width: 100% !important;
+}
+
+.typewriter {
+  font-family: "AmericanTypwrterITCW01--731025";
+}
+
+.bubble-link-light {
+  font-weight: 700;
+  background-color: var(--white-light);
+  border-radius: 12px;
+  padding: 4px;
+}
+
+.bubble-link-dark {
+  font-weight: 700;
+  background-color: var(--blue-light);
+  border-radius: 12px;
+  padding: 4px;
+}
+
 /* Header */
 
 header {
-  height: 120px;
+  width: 100vw;
+  height: var(--header-height);
+  background-color: white;
   box-shadow: 0 3px 6px grey;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
 }
 
 .line-blue {
@@ -30,13 +101,14 @@ header {
 
 .navigation {
   height: 100px;
-  padding: 10px 16px;
+  padding: 0 16px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
-  height: 80%;
+  height: 80px;
 }
 
 .menu {
@@ -66,5 +138,23 @@ header {
 
 .line-middle {
   margin: 8px 0;
+}
+
+/* Accueil */
+
+.banner {
+  padding: 0;
+}
+
+.banner > .wp-block-cover__inner-container {
+  margin-right: 15%;
+} 
+
+.hashtag {
+  font-family: "AmericanTypwrterITCW01--731025";
+  font-size: 1.7rem;
+  letter-spacing: 6px;
+  font-weight: 700;
+  margin: 24px 16px;
 }
 
