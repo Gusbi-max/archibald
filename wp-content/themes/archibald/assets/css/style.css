@@ -16,28 +16,32 @@
   --blue-light: #AFBED1;
   --white-light: #FFFFFF55;
   --red: #DC241F;
+  --yellow: #FFE18C;
   --header-height: 120px;
 }
 
+/* Reset css */
 * {
   margin: 0;
   padding: 0;
 }
 
+/* Mobile-first */
+/* Global */
 body {
   width: 100vw;
 }
 
 ul {
-  margin-inline-start: 16px;
+
 }
 
 li {
-  margin-left: 16px;
+  margin-inline-start: 16px;
 }
 
-p, h2, h3 {
-  margin: 16px;
+p, h2, h3, ul {
+  margin-bottom: 16px;
 }
 
 p, li {
@@ -48,31 +52,72 @@ h2, h3 {
   font-family: "AmericanTypwrterITCW01--731025";
 }
 
+h2 {
+  width: 100%;
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
 .container {
   width: 100%;
   margin-top: calc(var(--header-height));
 }
 
-.wp-block-cover__inner-container {
-  width: 100% !important;
+.wp-block-cover {
+  padding: 0;
 }
 
-.typewriter {
-  font-family: "AmericanTypwrterITCW01--731025";
+.wp-block-cover__inner-container {
+  width: 100% !important;
+  margin: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.wp-block-cover__inner-container > p {
+  text-align: justify;
+}
+
+.wp-block-cover__inner-container > h2 {
+  width: 100%;
+}
+
+.wp-block-group {
+  margin: 35px;
+}
+
+.wp-block-group__inner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .bubble-link-light {
+  display: inline-block;
   font-weight: 700;
   background-color: var(--white-light);
-  border-radius: 12px;
   padding: 4px;
+  border-radius: 12px;
+  transition: all .5s ease;
 }
 
 .bubble-link-dark {
+  display: inline-block;
   font-weight: 700;
   background-color: var(--blue-light);
-  border-radius: 12px;
+  color: #FFFFFF;
   padding: 4px;
+  border-radius: 12px;
+  transition: all .5s ease;
+}
+
+.bubble-link-dark:hover, .bubble-link-light:hover {
+  background-color: var(--yellow);
+  color: var(--blue) !important;
 }
 
 /* Header */
@@ -142,19 +187,7 @@ header {
 
 /* Accueil */
 
-.banner {
-  padding: 0;
-}
-
-.banner > .wp-block-cover__inner-container {
-  margin-right: 15%;
-} 
-
-.hashtag {
+.typewriter {
   font-family: "AmericanTypwrterITCW01--731025";
-  font-size: 1.7rem;
-  letter-spacing: 6px;
-  font-weight: 700;
-  margin: 24px 16px;
+  margin: 16px 35px;
 }
-
