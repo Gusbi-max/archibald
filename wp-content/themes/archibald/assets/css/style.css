@@ -5,6 +5,11 @@
 }
 
 @font-face { 
+  font-family: "Mom´sTypewriter"; 
+  src: url("https://static.wixstatic.com/ufonts/240db9_449d0f932e8445a3bb5a938c9cd6c747/woff2/file.woff2") format("woff2");
+}
+
+@font-face { 
   font-family: "Lato-Light"; 
   src: url("https://fonts.gstatic.com/s/lato/v14/2hXzmNaFRuKTSBR9nRGO-A.woff2") format("woff2");
 }
@@ -44,17 +49,19 @@ p, li {
   font-family: "Lato-Light";
 }
 
-h2, h3 {
+h1, h2, h3, h4 {
   font-family: "AmericanTypwrterITCW01--731025";
 }
 
 h2 {
   font-size: 1.8rem;
   font-weight: bolder;
+  text-transform: uppercase;
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
+  color: var(--blue);
 }
 
 .no-margin-bottom {
@@ -140,6 +147,10 @@ h3 {
   background-size: contain;
 }
 
+.media-and-text > .wp-block-group__inner-container > .wp-block-group {
+  margin: 0;
+}
+
 /* Header */
 
 header {
@@ -205,7 +216,7 @@ header {
   margin: 8px 0;
 }
 
-/* Accueil */
+/* Pages */
 
 .typewriter {
   font-family: "AmericanTypwrterITCW01--731025";
@@ -221,9 +232,38 @@ header {
   margin: 3vw auto;
 }
 
-@media screen and (min-width: 500px) {
+.page-index {
+  margin-bottom: 0;
+}
 
-  
+.banner{
+  background-color: var(--blue);
+  margin-left: 0;
+  margin-right: 0;
+  color: #FFFFFF;
+}
+
+.banner > .wp-block-group__inner-container {
+  padding: 35px 0;
+  margin: 8%;
+}
+
+.banner > .wp-block-group__inner-container > p {
+  font-family: "Mom´sTypewriter";
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+.media-and-text > .wp-block-group__inner-container {
+  display: grid;
+  grid-template-rows: auto;
+}
+
+.media-and-text > .wp-block-group__inner-container > figure {
+  grid-row: 2;
+}
+
+@media screen and (min-width: 500px) {
 
   .banner-text-right > .wp-block-cover__inner-container {
     margin-left: 30%;
@@ -245,6 +285,7 @@ header {
 }
 
 @media screen and (min-width: 700px) {
+
   .main-banner {
     background-size: cover;
     background-attachment: fixed;
