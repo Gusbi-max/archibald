@@ -18,11 +18,15 @@
 /* Variables */
 :root {
   --blue: #02253A;
+  --table-background: #303f4d;
   --blue-light: #AFBED1;
   --white-light: #FFFFFF55;
   --red: #DC241F;
   --yellow: #FFE18C;
+
   --header-height: 120px;
+  --margin-bottom: 16px;
+  --margin-horizontal: 24px;
 }
 
 /* Reset css */
@@ -41,8 +45,9 @@ li {
   margin-inline-start: 16px;
 }
 
-p, h2, h3, ul {
-  margin-bottom: 16px;
+h2, h3, h4, p, ul, .wp-block-image {
+  grid-column: 2 / 3;
+  margin-bottom: var(--margin-bottom);
 }
 
 p, li {
@@ -53,84 +58,154 @@ h1, h2, h3, h4 {
   font-family: "AmericanTypwrterITCW01--731025";
 }
 
+h1 {
+  font-size: 26px;
+  text-transform: uppercase;
+}
+
 h2 {
-  font-size: 1.8rem;
+  font-size: 18px;
   font-weight: bolder;
   text-transform: uppercase;
 }
 
 h3 {
-  font-size: 1.4rem;
+  font-size: 18px;
+  color: var(--blue);
+  margin-top: 12px;
+}
+
+h4 {
+  font-size: 14px;
+}
+
+table, tr {
+  font-family: "AmericanTypwrterITCW01--731025";
+  background-color: var(--table-background);
+  color: #FFFFFF;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+td {
+  width: 100%;
+  height: 300px;
+  margin: auto;
+  padding: var(--margin-horizontal);
+  border: solid 1px var(--blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.alert {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 20px;
   color: var(--blue);
 }
 
-.no-margin-bottom {
-  margin-bottom: 0;
+.container {
+  margin-top: var(--header-height);
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: var(--margin-horizontal) 1fr var(--margin-horizontal);
 }
 
-.container {
-  width: 100%;
-  margin-top: calc(var(--header-height));
+.media-and-text {
+  grid-column: 2 / 3;
+}
+
+.wp-block-group__inner-container {
+  display: grid;
+  grid-template-rows: auto;
+}
+
+.wp-block-cover__inner-container {
+  width: 100% !important;
+  padding: 24px 0;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: var(--margin-horizontal) 1fr var(--margin-horizontal);
+}
+
+.wp-block-table {
+  grid-column: 1 / 4;
+}
+
+.wp-block-gallery {
+  grid-column: 2 / 3;
 }
 
 .wp-block-cover {
   padding: 0;
 }
 
-.wp-block-cover__inner-container {
-  width: 100% !important;
-  margin: 35px 8%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+.group-banner {
+  background-color: var(--blue);
+  color: #FFFFFF;
+  grid-column: 1 / 4;
+  padding: 12px 24px;
+  margin-bottom: var(--margin-bottom);
 }
 
-.wp-block-cover__inner-container > p {
-  text-align: justify;
+.group-banner > .wp-block-group__inner-container > .banner-title {
+  font-family: "Mom´sTypewriter";
 }
 
-.wp-block-cover__inner-container > h2 {
-  width: 100%;
+.image-background {
+  grid-column: 1 / 4;
 }
 
-.wp-block-group {
-  margin: 35px  8%;
+.no-margin-bottom {
+  margin-top: 12px;
+  margin-bottom: 0;
 }
 
-.wp-block-group__inner-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+/* .media-pos-n has to have a grid-row like : n / n+1 */
+/* if no position given, media stay in last position */
+.media-pos-1 > .wp-block-group__inner-container > .wp-block-image {
+  grid-row: 1 / 2;
 }
 
-.wp-block-group__inner-container > h2, h3, ul {
-  width: 100%;
+.media-pos-2 > .wp-block-group__inner-container > .wp-block-image {
+  grid-row: 2 / 3;
 }
 
-.banner-text-left {
-  justify-content: flex-start;
+.media-pos-3 > .wp-block-group__inner-container > .wp-block-image {
+  grid-row: 3 / 4;
 }
 
-.banner-text-right {
-  justify-content: flex-end;
+.media-pos-4 > .wp-block-group__inner-container > .wp-block-image {
+  grid-row: 4 / 5;
 }
 
-.bubble-link-light {
-  display: inline-block;
+.media-pos-5 > .wp-block-group__inner-container > .wp-block-image {
+  grid-row: 5 / 6;
+}
+
+.media-pos-6 > .wp-block-group__inner-container > .wp-block-image {
+  grid-row: 6 / 7;
+}
+
+.bubble-link-dark {
+  /* display: inline-block; */
   font-weight: 700;
-  background-color: var(--white-light);
-  padding: 4px;
+  background-color: var(--blue-light);
+  color: #FFFFFF;
+  padding: 6px;
+  margin: 16px 0 16px auto;
   border-radius: 12px;
   transition: all .5s ease;
 }
 
-.bubble-link-dark {
-  display: inline-block;
+.bubble-link-light {
+  /* display: inline-block; */
   font-weight: 700;
-  background-color: var(--blue-light);
+  background-color: var(--white-light);
   color: #FFFFFF;
-  padding: 4px;
-  margin: 16px auto;
+  padding: 6px;
+  margin: 16px 0 16px auto;
   border-radius: 12px;
   transition: all .5s ease;
 }
@@ -140,15 +215,8 @@ h3 {
   color: var(--blue) !important;
 }
 
-.main-banner {
-  height: 50vw;
-  min-height: 300px;
-  max-height: 650px;
-  background-size: contain;
-}
-
-.media-and-text > .wp-block-group__inner-container > .wp-block-group {
-  margin: 0;
+.typewriter {
+  font-family: "AmericanTypwrterITCW01--731025";
 }
 
 /* Header */
@@ -216,83 +284,62 @@ header {
   margin: 8px 0;
 }
 
-/* Pages */
+/* Page Accueil */
 
-.typewriter {
-  font-family: "AmericanTypwrterITCW01--731025";
-  font-size: 4vw;
-  margin: 16px 8%;
+.main-banner-with-logo {
+  grid-column: 1 / 4;
+}
+
+.main-banner-with-logo > .wp-block-group__inner-container {
+  position: relative;
+}
+
+.main-banner-with-logo > .wp-block-group__inner-container > .wp-block-image:nth-child(2) {
+  width: 50%;
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  z-index: 10;
+}
+
+.main-banner-with-logo > .wp-block-group__inner-container > .wp-block-image > img {
+  width: 100%;
+  height: auto;
 }
 
 .hashtag {
   font-family: "AmericanTypwrterITCW01--731025";
-  font-weight: 900;
-  font-size: 5vw;
-  letter-spacing: 2vw;
-  margin: 3vw auto;
+  font-weight: bolder;
+  font-size: 7vw;
+  letter-spacing: 6px;
+  padding: 24px 0;
+  margin: 0;
+}
+
+/* Page with index */
+
+.main-banner {
+  padding: 0;
+  grid-column: 1 / 4;
 }
 
 .page-index {
-  margin-bottom: 0;
+  grid-column: 2 / 3;
+  padding: 12px 0 0 0;
 }
 
-.banner{
+.banner {
+  grid-column: 1 / 4;
   background-color: var(--blue);
-  margin-left: 0;
-  margin-right: 0;
   color: #FFFFFF;
-}
-
-.banner > .wp-block-group__inner-container {
-  padding: 35px 0;
-  margin: 8%;
-}
-
-.banner > .wp-block-group__inner-container > p {
+  padding: 12px 0;
   font-family: "Mom´sTypewriter";
-  font-weight: 400;
-  font-size: 1.1rem;
 }
 
-.media-and-text > .wp-block-group__inner-container {
-  display: grid;
-  grid-template-rows: auto;
-}
-
-.media-and-text > .wp-block-group__inner-container > figure {
-  grid-row: 2;
-}
-
-@media screen and (min-width: 500px) {
-
-  .banner-text-right > .wp-block-cover__inner-container {
-    margin-left: 30%;
-    max-width: 350px;
-  }
-
-  .banner-text-left > .wp-block-cover__inner-container {
-    margin-right: 30%;
-    max-width: 350px;
-  }
-
-  .wp-block-cover__inner-container {
-    margin: 35px 20%;
-  }
-
-  .wp-block-group {
-    margin: 35px 20%;
-  }
-}
-
-@media screen and (min-width: 700px) {
-
-  .main-banner {
-    background-size: cover;
-    background-attachment: fixed;
-  }
-
-  .typewriter {
-    font-size: 30px;
-    margin: 16px 20%;
-  }
+.banner-white {
+  grid-column: 1 / 4;
+  background-color: #FFFFFF;
+  color: var(--blue);
+  padding: 12px 0;
+  font-family: "Mom´sTypewriter";
 }
