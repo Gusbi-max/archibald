@@ -33,6 +33,7 @@
 * {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 /* Mobile-first */
@@ -43,6 +44,7 @@ body {
 
 li {
   margin-inline-start: 16px;
+  overflow-x: visible;
 }
 
 h2, h3, h4, p, ul, .wp-block-image {
@@ -64,7 +66,7 @@ h1 {
 }
 
 h2 {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bolder;
   text-transform: uppercase;
 }
@@ -308,6 +310,7 @@ header {
 }
 
 .hashtag {
+  grid-column: 1 / 4;
   font-family: "AmericanTypwrterITCW01--731025";
   font-weight: bolder;
   font-size: 7vw;
@@ -342,4 +345,89 @@ header {
   color: var(--blue);
   padding: 12px 0;
   font-family: "Mom´sTypewriter";
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+
+@media screen and (min-width: 450px) {
+
+  :root {
+    --margin-horizontal: 64px;
+  }
+
+  p, li {
+    font-size: 18px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+  .typewriter {
+    font-size: 22px;
+  }
+
+  .text-left > .wp-block-cover__inner-container {
+    grid-template-columns: var(--margin-horizontal) 1fr 30%;
+  }
+
+  .text-right > .wp-block-cover__inner-container {
+    grid-template-columns: 30% 1fr var(--margin-horizontal);
+  }
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+
+@media screen and (min-width: 800px) {
+
+  :root {
+    --margin-horizontal: 124px;
+  }
+
+  .text-left > .wp-block-cover__inner-container {
+    grid-template-columns: var(--margin-horizontal) 400px 1fr;
+  }
+
+  .text-right > .wp-block-cover__inner-container {
+    grid-template-columns: 1fr 400px var(--margin-horizontal);
+  }
+
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+
+@media screen and (min-width: 1100px) {
+
+  .container {
+    grid-template-columns: 1fr 1200px 1fr;
+  }
+
+  .hashtag {
+    font-size: 60px;
+    letter-spacing: 10px;
+  }
+
+  p, li {
+    font-size: 20px
+  }
+
+  h2 {
+    font-size: 34px;
+  }
+  
+  h3 {
+    font-size: 24px;
+  }
+
+  .text-left > .wp-block-cover__inner-container {
+    grid-template-columns: 1fr 600px 3fr
+  }
+
+  .text-right > .wp-block-cover__inner-container {
+    grid-template-columns: 3fr 600px 1fr
+  }
 }
