@@ -43,5 +43,6 @@
 		</div>
 	</div>
   </footer>
+  <script src="<?= get_template_directory_uri() . '/assets/js/script.js>' ?>"></script>
 </body>
 </html>
