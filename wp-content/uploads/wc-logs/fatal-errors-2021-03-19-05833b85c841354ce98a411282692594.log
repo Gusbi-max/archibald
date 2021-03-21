@@ -1,0 +1,25 @@
+2021-03-19T20:30:36+00:00 CRITICAL Uncaught RuntimeException: Erreur lors de l’enregistrement de l’action : Erreur lors de l’enregistrement de l’action : Erreur de la base de données. in C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\migration\ActionScheduler_DBStoreMigrator.php:44
+Stack trace:
+#0 C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\data-stores\ActionScheduler_HybridStore.php(242): ActionScheduler_DBStoreMigrator->save_action(Object(ActionScheduler_Action), NULL)
+#1 C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_ActionFactory.php(177): ActionScheduler_HybridStore->save_action(Object(ActionScheduler_Action))
+#2 C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_ActionFactory.php(84): ActionScheduler_ActionFactory->store(Object(ActionScheduler_Action))
+#3 C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-schedu dans C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\migration\ActionScheduler_DBStoreMigrator.php à la ligne 44
+
+2021-03-19T20:30:36+00:00 CRITICAL Uncaught RuntimeException: Erreur lors de l’enregistrement de l’action : Erreur lors de l’enregistrement de l’action : Duplicata du champ '0' pour la clef 'PRIMARY' in C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\migration\ActionScheduler_DBStoreMigrator.php:44
+Stack trace:
+#0 C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\data-stores\ActionScheduler_HybridStore.php(242): ActionScheduler_DBStoreMigrator->save_action(Object(ActionScheduler_Action), NULL)
+#1 C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_ActionFactory.php(177): ActionScheduler_HybridStore->save_action(Object(ActionScheduler_Action))
+#2 C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_ActionFactory.php(84): ActionScheduler_ActionFactory->store(Object(ActionScheduler_Action))
+#3 C:\wamp64\www\archibald\wp-content\plugins\woocommerce\package dans C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\migration\ActionScheduler_DBStoreMigrator.php à la ligne 44
+
+2021-03-19T21:16:52+00:00 CRITICAL Uncaught Error: Call to a member function get_price_html() on null in C:\wamp64\www\archibald\wp-content\plugins\woocommerce\templates\single-product\price.php:25
+Stack trace:
+#0 C:\wamp64\www\archibald\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 C:\wamp64\www\archibald\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1569): wc_get_template('single-product/...')
+#2 C:\wamp64\www\archibald\wp-content\themes\archibald\templates\shop.php(19): woocommerce_template_single_price()
+#3 C:\wamp64\www\archibald\wp-includes\template-loader.php(106): include('C:\\wamp64\\www\\a...')
+#4 C:\wamp64\www\archibald\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\a...')
+#5 C:\wamp64\www\archibald\index.php(17): require('C:\\wamp64\\www\\a...')
+#6 {main}
+  thrown dans C:\wamp64\www\archibald\wp-content\plugins\woocommerce\templates\single-product\price.php à la ligne 25
+
