@@ -11,23 +11,30 @@
 				vitae dicta sunt explicabo.
 			</p>
 		</div>
+
 		<div id="second-column">
-			<h3 class="text-white">LIENS UTILES</h3>
-			<div class="line-title"></div>
+			<div>
+				<h3 class="text-white">LIENS UTILES</h3>
+				<div class="line-title"></div>
+			</div>
 			<a href="#" class="footer-link text-white">Archibald</a>
 			<a href="#" class="footer-link text-white">Tonic de Distillerie</a>
 			<a href="#" class="footer-link text-white">Engagé et Responsable</a>
 			<a href="#" class="footer-link text-white">Dégustation</a>
 		</div>
+
 		<div id="third-column">
 			<a href="#" class="footer-link text-white">Contact</a>
 			<a href="#" class="footer-link text-white">Blogs et News</a>
 			<a href="#" class="footer-link text-white">E-Shop</a>
 			<a href="#" class="footer-link text-white">Nos CGV</a>
 		</div>
+
 		<div id="fourth-column">
-			<h3 class="text-white">LIVRAISON</h3>
-			<div class="line-title"></div>
+			<div>
+				<h3 class="text-white">LIVRAISON</h3>
+				<div class="line-title"></div>
+			</div>
 			<p class="footer-text text-white">
 				Livraison standard en 3 à 5 jours ouvrées à<br>
 				6,90€ TTC,  offerts à partir de 60€ d’achat*<br>
@@ -36,6 +43,7 @@
 			</p>
 		</div>
 	</div>
+
 	<div class="footer-section">
 		<div>
 			<div class="line-grey"></div>

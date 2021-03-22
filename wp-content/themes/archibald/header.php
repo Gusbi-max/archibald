@@ -29,7 +29,7 @@
            <path id="Tracé_1" data-name="Tracé 1" d="M29.677,11.218h-7.5a7.008,7.008,0,0,0-6.8-6.167,7.007,7.007,0,0,0-6.8,6.167H1.073a1.073,1.073,0,0,0,0,2.147h.589L4.953,24.331A2.047,2.047,0,0,0,6.794,25.7H23.958a2.047,2.047,0,0,0,1.841-1.37L29.09,13.365h.59a1.074,1.074,0,1,0,0-2.147ZM9.457,22.839H8.923a2.045,2.045,0,0,1-1.842-1.371l-.662-2.2H9.457v3.575Zm0-5.006H5.99l-.661-2.206a1.007,1.007,0,0,1,1.019-1.37H9.457ZM17.4,22.839H13.585V19.264H17.4Zm0-5.006H13.585V14.257H17.4Zm6.266,3.636a2.047,2.047,0,0,1-1.841,1.371h-.3V19.264h2.8Zm1.752-5.841-.66,2.206H21.533V14.258h2.872A1.006,1.006,0,0,1,25.422,15.628ZM15.375,7.2a4.852,4.852,0,0,1,4.646,4.022H10.73A4.852,4.852,0,0,1,15.375,7.2Z" transform="translate(0 -5.051)" fill="var(--basket)"/>
         </svg></a>
       </div>
-      <div class="button-menu">
+      <div class="row button-menu">
         MENU
       </div>
       <div class="row button-profil">
@@ -45,22 +45,22 @@
 
     <div class="menu-burger">
         <div class="section-burger">
-            <p>TONIC DE DISTILLERIE</p>
+            <a href="#" class="header-link text-white"><h2 class="title-page">TONIC DE DISTILLERIE</h2></a>
         </div>
         <div class="section-burger">
-            <p>ENGAGE ET RESPONSABLE</p>
+            <a href="#" class="header-link text-white"><h2 class="title-page">ENGAGE ET RESPONSABLE</h2></a>
         </div>
         <div class="section-burger">
-            <p>DEGUSTATION</p>
+            <a href="#" class="header-link text-white"><h2 class="title-page">DEGUSTATION</h2></a>
         </div>
         <div class="section-burger">
-            <p>CONTACT</p>
+            <a href="#" class="header-link text-white"><h2 class="title-page">CONTACT</h2></a>
         </div>
         <div class="section-burger">
-            <p>BLOG & NEWS</p>
+            <a href="#" class="header-link text-white"><h2 class="title-page">BLOG & NEWS</h2></a>
         </div>
         <div class="section-burger">
-            <p>E-SHOP</p>
+            <a href="#" class="header-link text-white"><h2 class="title-page">E-SHOP</h2></a>
         </div>
     </div>
   </header>
