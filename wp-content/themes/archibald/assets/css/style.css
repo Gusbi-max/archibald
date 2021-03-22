@@ -722,7 +722,8 @@ header {
 
 .product-item-image{
   display: flex;
-  width: 100%;
+  width: 400px;
+  height: 400px;
 }
 
 .product-item-image > img {
@@ -778,4 +779,14 @@ header {
 }
 .wc-block-grid__product{
   padding: 40px!important;
+}
+
+.products-container{
+  display: flex;
+  margin: 2rem;
+  flex-direction:column;
+}
+.products-container > h1{
+  font-weight: bold;
+  font-size:50px;
 }
