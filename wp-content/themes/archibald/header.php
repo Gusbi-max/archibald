@@ -56,27 +56,6 @@
         'menu_class' => 'menu-burger',
       ]);
     ?>
-
-    <!--<div class="menu-burger">
-        <div class="section-burger">
-            <h2 class="title-page">TONIC DE DISTILLERIE</h2>
-        </div>
-        <div class="section-burger">
-            <h2 class="title-page">ENGAGE ET RESPONSABLE</h2>
-        </div>
-        <div class="section-burger">
-            <h2 class="title-page">DEGUSTATION</h2>
-        </div>
-        <div class="section-burger">
-            <h2 class="title-page">CONTACT</h2>
-        </div>
-        <div class="section-burger">
-            <h2 class="title-page">BLOG & NEWS</h2>
-        </div>
-        <div class="section-burger">
-            <h2 class="title-page">E-SHOP</h2>
-        </div>
-    </div>-->
   </header>
 
   <div class="container">

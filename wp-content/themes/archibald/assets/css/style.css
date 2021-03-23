@@ -51,6 +51,12 @@ body {
     grid-template-rows: auto;
 }
 
+.container-no-margin-top {
+    display: grid;
+    grid-template-columns: 24px 1fr 24px;
+    grid-template-rows: auto;
+}
+
 h1 {
     font-family: "AmericanTypwrterITCW01--731025";
     font-size: 26px;
@@ -474,22 +480,21 @@ textarea {
     margin-right: 6vw;
 }
 
-.line-white {
+.line-blue, .line-white, .line-red {
     width: 250px;
     height: 6px;
-    background-color: white;
-}
-
-.line-red {
-    width: 250px;
-    height: 6px;
-    background-color: var(--red);
 }
 
 .line-blue {
-    width: 250px;
-    height: 6px;
     background-color: var(--blue);
+}
+
+.line-white {
+    background-color: var(--white);
+}
+
+.line-red {
+    background-color: var(--red);
 }
 
 .button-shop {
@@ -666,7 +671,6 @@ textarea {
 
       .button-burger.open .lines-burger {
         background: transparent;
-        box-shadow: none;
       }
 
       .button-burger.open .lines-burger::before {
@@ -675,9 +679,6 @@ textarea {
         animation: openBefore 0.5s;
       }
       @keyframes openBefore {
-          0% {
-            
-          }
           50% {
             transform: translateY(0px);
             transform: rotate(0deg);
@@ -694,9 +695,6 @@ textarea {
         animation: openAfter 0.5s;
       }
       @keyframes openAfter {
-          0% {
-            
-          }
           50% {
             transform: translateY(0px);
             transform: rotate(0deg);
@@ -729,13 +727,7 @@ footer {
 
 .footer-logo {
     width: 140px;
-    height: auto;
     margin-left: 45px;
-}
-
-.footer-link {
-    text-decoration: none;
-    margin-bottom: 25px;
 }
 
 .footer-menus {
@@ -771,34 +763,29 @@ footer {
     margin-bottom: var(--margin-bottom);
 }
 
-#first-column {
+#first-column, #second-column, #third-column, #fourth-column {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+#first-column {
     margin-top: 100px;
-    margin-right: 75px;
+    width: 30%;
 }
 
 #second-column {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     margin-top: 50px;
-    margin-right: 50px;
+    width: 15%;
 }
 
 #third-column {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     margin-top: 115px;
-    margin-right: 100px;
+    width: 15%;
 }
 
 #fourth-column {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    width: 25%;
 }
 
 /* Responsive Footer */
@@ -817,13 +804,17 @@ footer {
         margin-left: 0;
     }
 
+    .line-title {
+        margin-left: 30%;
+    }
+
     #first-column {
         align-items: center;
     }
 
     #first-column, #second-column, #third-column, #fourth-column {
         margin-top: 25px;
-        margin-right: 0;
+        width: 80%;
     }
 }
 
