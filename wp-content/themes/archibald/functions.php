@@ -9,8 +9,14 @@ function montheme_supports() {
 
 function montheme_register_assets() {
   wp_register_style( 'style_css', get_template_directory_uri() . '/assets/css/style.css' );
+  wp_register_style( 'frank_css', get_template_directory_uri() . '/assets/css/style-frank.css', ['style_css'] );
+  wp_register_style( 'aurel_css', get_template_directory_uri() . '/assets/css/style-aurel.css', ['style_css'] );
+  wp_register_style( 'max_css', get_template_directory_uri() . '/assets/css/style-max.css', ['style_css'] );
   wp_register_script( 'script_js', get_template_directory_uri() . '/assets/js/script.js',false ,false ,true );
   wp_enqueue_style( 'style_css' );
+  wp_enqueue_style( 'frank_css' );
+  wp_enqueue_style( 'aurel_css' );
+  wp_enqueue_style( 'max_css' );
   wp_enqueue_script( 'script_js' );
 }
 
