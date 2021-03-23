@@ -12,7 +12,7 @@
   <header>
     <div class="row header">
       <div class="row logo">
-        <a class="header-link" href="#"><img class="archibald" src="<?= get_template_directory_uri() . '/assets/images/logo_archibald.png' ?>" alt="archibald"></a>
+        <a class="header-link" href="http://localhost/archibald/"><img class="archibald" src="<?= get_template_directory_uri() . '/assets/images/logo_archibald.png' ?>" alt="archibald"></a>
       </div>
 
       <div class="row lines">
@@ -22,7 +22,7 @@
       </div>
 
       <div class="row button-shop">
-        <a class="header-link text-white" href="#">E-SHOP</a>
+        <a class="header-link text-white" href="http://localhost/archibald/boutique/">E-SHOP</a>
       </div>
       <div class="row button-basket">
         <a class="header-link" href="#"><svg id="Logo_panier" data-name="Logo panier" xmlns="http://www.w3.org/2000/svg" width="30.752" height="20.65" viewBox="0 0 30.752 20.65">
