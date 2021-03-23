@@ -1,27 +1,28 @@
 const menuBtn = document.querySelector('.button-menu');
 const burgerBtn = document.querySelector('.button-burger');
+const mainMenu = document.querySelector('.menu');
 const burgerMenu = document.querySelector('.menu-burger');
 
-let burgerOpen = false;
+let menuOpen = false;
 
 menuBtn.addEventListener('click', () => {
-    if (!burgerOpen) {
-        burgerMenu.classList.add('open');
-        burgerOpen = true;
+    if (!menuOpen) {
+        mainMenu.classList.add('open');
+        menuOpen = true;
     } else {
-        burgerMenu.classList.remove('open');
-        burgerOpen = false;
+        mainMenu.classList.remove('open');
+        menuOpen = false;
     }
 });
 
 burgerBtn.addEventListener('click', () => {
-    if (!burgerOpen) {
+    if (!menuOpen) {
         burgerBtn.classList.add('open');
         burgerMenu.classList.add('open');
-        burgerOpen = true;
+        menuOpen = true;
     } else {
         burgerBtn.classList.remove('open');
         burgerMenu.classList.remove('open');
-        burgerOpen = false;
+        menuOpen = false;
     }
 });

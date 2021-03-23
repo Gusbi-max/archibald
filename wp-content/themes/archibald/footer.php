@@ -19,8 +19,8 @@
 			</div>
 			<a href="#" class="footer-link text-white">Archibald</a>
 			<a href="#" class="footer-link text-white">Tonic de Distillerie</a>
-			<a href="#" class="footer-link text-white">Engagé et Responsable</a>
-			<a href="#" class="footer-link text-white">Dégustation</a>
+			<a href="#" class="footer-link text-white">EngagÃ© et Responsable</a>
+			<a href="#" class="footer-link text-white">DÃ©gustation</a>
 		</div>
 
 		<div id="third-column">
@@ -36,10 +36,10 @@
 				<div class="line-title"></div>
 			</div>
 			<p class="footer-text text-white">
-				Livraison standard en 3 à 5 jours ouvrées à<br>
-				6,90€ TTC,  offerts à partir de 60€ d’achat*<br>
-				Livraison express en 1 jour à 14,90€ TTC*<br>
-				Prix et Délais de livraison par pays Paiement 100% sécurisé
+				Livraison standard en 3 Ã  5 jours ouvrÃ©es !<br>
+				6,90â‚¬ TTC, offerts Ã  partir de 60â‚¬ d'achat*<br>
+				Livraison express en 1 jour Ã  14,90â‚¬ TTC*<br>
+				Prix et DÃ©lais de livraison par pays Paiement 100% sÃ©curisÃ©
 			</p>
 		</div>
 	</div>
@@ -47,7 +47,7 @@
 	<div class="footer-section">
 		<div>
 			<div class="line-grey"></div>
-			<p class="text-white text-center">© 2021, Archibald Tonic</p>
+			<p class="text-white text-center">&copy; 2021, Archibald Tonic</p>
 		</div>
 	</div>
   </footer>

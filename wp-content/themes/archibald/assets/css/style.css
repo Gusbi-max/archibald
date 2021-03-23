@@ -439,9 +439,7 @@ textarea {
   cursor: pointer;
 }
 
-/* ------------------------------------------------------------------------------------------------ */
-
-@media screen and (min-width: 450px) {
+/* Header */
 
 .header {
     width: 100vw;
@@ -476,14 +474,6 @@ textarea {
     margin-right: 6vw;
 }
 
-@media screen and (min-width: 600px) {
-  input {
-    grid-column: auto;
-  }
-}
-
-/* ------------------------------------------------------------------------------------------------ */
-
 .line-white {
     width: 250px;
     height: 6px;
@@ -494,6 +484,12 @@ textarea {
     width: 250px;
     height: 6px;
     background-color: var(--red);
+}
+
+.line-blue {
+    width: 250px;
+    height: 6px;
+    background-color: var(--blue);
 }
 
 .button-shop {
@@ -526,7 +522,7 @@ textarea {
     width: 4vw;
 }
 
-.menu-burger {
+.menu {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -540,7 +536,7 @@ textarea {
     transition: all .5s ease-in-out;
 }
 
-.section-burger {
+.section-menu {
     color: var(--blue);
     font-weight: bold;
     display: flex;
@@ -548,6 +544,239 @@ textarea {
     align-items: center;
     margin-left: 24px;
     margin-right: 24px;
+}
+
+.menu-burger {
+    display: none;
+}
+
+.title-page {
+    font-size: 1.25vw;
+    margin-bottom: 0;
+}
+
+/* Animation Header */
+.menu.open {
+    transform: translateY(96px);
+}
+
+/* Responsive Header */
+
+@media screen and (max-width: 850px) {
+
+    :root {
+        --basket: var(--blue);
+    }
+
+    .menu, .lines, .button-shop, .button-menu, .button-profil {
+        display: none;
+    }
+
+    .logo {
+        width: 50vw;
+    }
+
+    .archibald {
+        height: 60px;
+    }
+
+    .button-basket {
+        background-color: var(--white);
+        width: 30vw;
+        justify-content: end;
+    }
+
+    .button-burger {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 80px;
+        cursor: pointer;
+        transition: all .5s ease-in-out;
+      }
+
+      .lines-burger {
+        width: 35px;
+        height: 2px;
+        background: var(--blue);
+        transition: all .5s ease-in-out;
+      }
+
+      .lines-burger::before,
+      .lines-burger::after {
+        content: '';
+        position: absolute;
+        width: 35px;
+        height: 2px;
+        background: var(--blue);
+        transition: all .5s ease-in-out;
+      }
+
+      .lines-burger::before {
+        transform: translateY(-12px);
+      }
+
+      .lines-burger::after {
+        transform: translateY(12px);
+      }
+
+      .menu-burger {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        width: 75%;
+        height: 100%;
+        background-color: var(--blue);
+        position: fixed;
+        top: 96px;
+        right: -75%;
+        z-index: 9998;
+        transition: all .5s ease-in-out;
+        padding-top: 15px;
+    }
+    
+    .section-burger {
+        color: var(--white);
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 25px;
+        margin-top: 25px;
+    }
+
+    .title-page {
+        font-size: 16px;
+    }
+
+    /* Animation Header */
+
+      .button-burger.open .lines-burger {
+        background: transparent;
+        box-shadow: none;
+      }
+
+      .button-burger.open .lines-burger::before {
+        transform: rotate(45deg);
+      }
+
+      .button-burger.open .lines-burger::after {
+        transform: rotate(-45deg);
+      }
+
+      .menu-burger.open {
+        transform: translateX(-75%);
+      }
+}
+
+/* Footer */
+
+footer {
+    width: 100vw;
+    height: var(--footer-height);
+    background-color: var(--blue);
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.footer-logo {
+    width: 140px;
+    height: auto;
+    margin-left: 45px;
+}
+
+.footer-link {
+    text-decoration: none;
+    margin-bottom: 25px;
+}
+
+.footer-text {
+    line-height: 30px;
+}
+
+.line-title {
+    background-color: var(--white);
+    width: 70px;
+    height: 10px;
+    margin-bottom: var(--margin-bottom);
+}
+
+.line-grey {
+    background-color: grey;
+    width: 60vw;
+    height: 1px;
+    margin-bottom: var(--margin-bottom);
+}
+
+#first-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 100px;
+    margin-right: 75px;
+}
+
+#second-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+
+#third-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 115px;
+    margin-right: 100px;
+}
+
+#fourth-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Responsive Footer */
+
+@media screen and (max-width: 850px) {
+
+    .footer-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-logo {
+        margin-top: 25px;
+        margin-bottom: 25px;
+        margin-left: 0;
+    }
+
+    #first-column {
+        align-items: center;
+    }
+
+    #first-column, #second-column, #third-column, #fourth-column {
+        margin-top: 25px;
+        margin-right: 0;
+    }
+}
+
+/* ---------------------------------------------------------------------------------- */
+
+@media screen and (min-width: 600px) {
+  input {
+    grid-column: auto;
+  }
 }
 
   .media-and-text > .wp-block-group__inner-container {
@@ -574,19 +803,7 @@ textarea {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-/* ANIMATION HEADER */
-.menu-burger.open {
-    transform: translateY(96px);
-}
-
-
-@media screen and (min-width: 1000px) {
-
-footer {
-    width: 100vw;
-    height: var(--footer-height);
-    background-color: var(--blue);
-}
+@media screen and (max-width: 1000px) {
 
   .main-banner-with-logo {
     height: 670px;
@@ -603,20 +820,9 @@ footer {
     letter-spacing: 10px;
   }
 
-.footer-logo {
-    width: 140px;
-    height: auto;
-    margin-left: 45px;
-}
-
   p, li { 
     font-size: 20px 
   }
-
-.footer-link {
-    text-decoration: none;
-    margin-bottom: 25px;
-}
 
   .wp-block-table {
     grid-column: 2 / 3;
@@ -688,19 +894,4 @@ footer {
       font-size: 24px;
       padding: 32px calc((100% - 1200px) / 2);
   }
-}
-
-
-
-/* Header */
-
-header {
-  width: 100vw;
-  height: var(--header-height);
-  background-color: var(--table-background);
-  box-shadow: 0 3px 10px #313131;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9999;
 }
