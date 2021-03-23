@@ -3,8 +3,14 @@
 function montheme_supports() {
   add_theme_support( 'title-tag' );
   add_theme_support( 'post-thumbnail' );
-  register_nav_menu('main', 'Menu principal');
+  register_nav_menus( array(
+    'desktop_menu' => 'Header Menu Desktop',
+    'mobile_menu' => 'Header Menu Mobile',
+    'footer_menu1'  => 'Footer Menu 1',
+    'footer_menu2'  => 'Footer Menu 2', 
+  ) );
 }
+
 
 function montheme_register_assets() {
   wp_register_style('style_css', get_template_directory_uri() . '/assets/css/style.css');
