@@ -534,11 +534,12 @@ textarea {
     top: 0;
     z-index: 9998;
     transition: all .5s ease-in-out;
+    list-style-type: none;
+    list-style: none;
+    list-style-image: none;
 }
 
-.section-menu {
-    color: var(--blue);
-    font-weight: bold;
+.menu li {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -546,13 +547,16 @@ textarea {
     margin-right: 24px;
 }
 
-.menu-burger {
-    display: none;
+.menu li a {
+    text-decoration: none;
+    margin: 0;
+    font-size: 1.25vw;
+    color: var(--blue);
+    font-weight: bold;
 }
 
-.title-page {
-    font-size: 1.25vw;
-    margin-bottom: 0;
+.menu-burger {
+    display: none;
 }
 
 /* Animation Header */
@@ -626,18 +630,21 @@ textarea {
         display: flex;
         flex-direction: column;
         align-items: start;
-        width: 75%;
+        width: 75vw;
         height: 100%;
         background-color: var(--blue);
         position: fixed;
         top: 96px;
-        right: -75%;
+        right: -75vw;
         z-index: 9998;
         transition: all .5s ease-in-out;
         padding-top: 15px;
+        list-style-type: none;
+        list-style: none;
+        list-style-image: none;
     }
     
-    .section-burger {
+    .menu-burger li {
         color: var(--white);
         font-weight: bold;
         display: flex;
@@ -647,8 +654,12 @@ textarea {
         margin-top: 25px;
     }
 
-    .title-page {
+    .menu-burger li a {
+        text-decoration: none;
+        margin: 0;
         font-size: 16px;
+        color: var(--white);
+        font-weight: bold;
     }
 
     /* Animation Header */
@@ -659,15 +670,45 @@ textarea {
       }
 
       .button-burger.open .lines-burger::before {
+        transform: translateY(-12px);
         transform: rotate(45deg);
+        animation: openBefore 0.5s;
+      }
+      @keyframes openBefore {
+          0% {
+            
+          }
+          50% {
+            transform: translateY(0px);
+            transform: rotate(0deg);
+          }
+          100% {
+            transform: translateY(0px);
+            transform: rotate(45deg);
+          }
       }
 
       .button-burger.open .lines-burger::after {
+        transform: translateY(12px);
         transform: rotate(-45deg);
+        animation: openAfter 0.5s;
+      }
+      @keyframes openAfter {
+          0% {
+            
+          }
+          50% {
+            transform: translateY(0px);
+            transform: rotate(0deg);
+          }
+          100% {
+            transform: translateY(0px);
+            transform: rotate(-45deg);
+          }
       }
 
       .menu-burger.open {
-        transform: translateX(-75%);
+        transform: translateX(-75vw);
       }
 }
 
@@ -695,6 +736,21 @@ footer {
 .footer-link {
     text-decoration: none;
     margin-bottom: 25px;
+}
+
+.footer-menus {
+    list-style-type: none;
+    list-style: none;
+    list-style-image: none;
+}
+
+.footer-menus li {
+    margin-bottom: 25px;
+}
+
+.footer-menus li a {
+    text-decoration: none;
+    color: var(--white);
 }
 
 .footer-text {

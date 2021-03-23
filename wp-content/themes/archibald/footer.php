@@ -17,17 +17,21 @@
 				<h3 class="text-white">LIENS UTILES</h3>
 				<div class="line-title"></div>
 			</div>
-			<a href="#" class="footer-link text-white">Archibald</a>
-			<a href="#" class="footer-link text-white">Tonic de Distillerie</a>
-			<a href="#" class="footer-link text-white">Engagé et Responsable</a>
-			<a href="#" class="footer-link text-white">Dégustation</a>
+			<?php wp_nav_menu([
+        			'theme_location' => 'footer_menu1',
+        			'container' => false,
+        			'menu_class' => 'footer-menus',
+      			]);
+    		?>
 		</div>
 
 		<div id="third-column">
-			<a href="#" class="footer-link text-white">Contact</a>
-			<a href="#" class="footer-link text-white">Blogs et News</a>
-			<a href="#" class="footer-link text-white">E-Shop</a>
-			<a href="#" class="footer-link text-white">Nos CGV</a>
+			<?php wp_nav_menu([
+        			'theme_location' => 'footer_menu2',
+        			'container' => false,
+        			'menu_class' => 'footer-menus',
+      			]);
+    		?>
 		</div>
 
 		<div id="fourth-column">

@@ -3,7 +3,12 @@
 function montheme_supports() {
   add_theme_support( 'title-tag' );
   add_theme_support( 'post-thumbnail' );
-  register_nav_menu('main', 'Menu principal');
+  register_nav_menus( array(
+    'desktop_menu' => __( 'Header Menu Desktop', 'text_domain' ),
+    'mobile_menu' => __( 'Header Menu Mobile', 'text_domain' ),
+    'footer_menu1'  => __( 'Footer Menu 1', 'text_domain' ),
+    'footer_menu2'  => __( 'Footer Menu 2', 'text_domain' )
+) );
 }
 
 function montheme_register_assets() {
