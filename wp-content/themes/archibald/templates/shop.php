@@ -22,6 +22,56 @@ $query = new WP_Query([
   </div>
 <div class="shop-container">
 <div class="filter-container">
+  <div class="filter-category">
+    <h3 class="category-title">test</h3>
+    <div class="filter-item">
+      <input type="checkbox" name="test1" id="">
+      <label for="test1">test1</label>
+    </div>
+    <div class="filter-item">
+      <input type="checkbox" name="test1" id="">
+      <label for="test1">test1</label>
+    </div>
+    <h3 class="category-title">test</h3>
+    <div class="filter-item">
+      <input type="checkbox" name="test1" id="">
+      <label for="test1">test1</label>
+    </div>
+    <div class="filter-item">
+      <input type="checkbox" name="test1" id="">
+      <label for="test1">test1</label>
+    </div>
+    <div class="filter-item">
+      <input type="checkbox" name="test1" id="">
+      <label for="test1">test1</label>
+    </div>
+    <h3 class="category-title">test</h3>
+    <div class="filter-item">
+      <input type="checkbox" name="test1" id="">
+      <label for="test1">test1</label>
+    </div>
+    <div class="filter-item">
+      <input type="checkbox" name="test1" id="">
+      <label for="test1">test1</label>
+    </div>
+    <div class="filter-item">
+      <input type="checkbox" name="test1" id="">
+      <label for="test1">test1</label>
+    </div>
+    <div class="filter-item">
+      <input type="checkbox" name="test1" id="">
+      <label for="test1">test1</label>
+    </div>
+    <h3 class="category-title">test</h3>
+    <div class="filter-item">
+      <input type="checkbox" name="test1" id="">
+      <label for="test1">test1</label>
+    </div>
+    <div class="filter-item">
+      <input type="checkbox" name="test1" id="">
+      <label for="test1">test1</label>
+    </div>
+  </div>
 </div>
 <div class="products-container">
   <h1>Archibald Tonic</h1>
@@ -30,9 +80,9 @@ $query = new WP_Query([
     <?php if ($query->have_posts()): while ($query->have_posts()): $query->the_post(); ?>
     <div class="product-item">
       <?php global $product; ?>
-      <div class="product-item-image">
+      <a class="product-item-image" href="<?php echo get_permalink($product->ID) ?>">
         <img src="<?php echo wp_get_attachment_url( $product->get_image_id() ); ?>" />
-      </div>
+      </a>
       <?php
         echo the_title();
         echo woocommerce_template_single_price();
@@ -59,9 +109,9 @@ $query = new WP_Query([
     <?php if ($query->have_posts()): while ($query->have_posts()): $query->the_post(); ?>
     <div class="product-item">
       <?php global $product; ?>
-      <div class="product-item-image">
+      <a class="product-item-image" href="<?php echo get_permalink($product->ID) ?>">
         <img src="<?php echo wp_get_attachment_url( $product->get_image_id() ); ?>" />
-      </div>
+      </a>
       <?php
         echo the_title();
         echo woocommerce_template_single_price();
@@ -87,9 +137,9 @@ $query = new WP_Query([
     <?php if ($query->have_posts()): while ($query->have_posts()): $query->the_post(); ?>
     <div class="product-item">
       <?php global $product; ?>
-      <div class="product-item-image">
+      <a class="product-item-image" href="<?php echo get_permalink($product->ID) ?>">
         <img src="<?php echo wp_get_attachment_url( $product->get_image_id() ); ?>" />
-      </div>
+      </a>
       <?php
         echo the_title();
         echo woocommerce_template_single_price();

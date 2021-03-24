@@ -38,6 +38,7 @@
   width: 60rem;
   height: 30rem;
   background-color: white;
+  padding: 1rem;
 }
 .shop-container{
     display: flex;
@@ -161,4 +162,11 @@
   border: solid 2px var(--blue);
   border-radius: 0;
   font-size: 12px;
+}
+
+/* filter */
+
+.filter-category{
+  display: flex;
+  flex-direction:column;
 }
