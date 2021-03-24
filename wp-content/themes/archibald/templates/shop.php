@@ -11,7 +11,19 @@ $query = new WP_Query([
   'product_cat' => 'archibald'
 ]);
 ?>
-
+<img class="background-img" src="<?= get_template_directory_uri() . '/assets/images/backdrop-shop.png' ?>" alt="">
+<div class="input-container">
+  <select name="" id="select">
+      <option value="">Trier par :</option>
+      <option value="dog">test1</option>
+      <option value="cat">test2</option>
+  </select>
+  <input class="qty" type="text" placeholder="Rechercher" id="name" name="name" required
+        minlength="4" maxlength="8" size="10">
+  </div>
+<div class="shop-container">
+<div class="filter-container">
+</div>
 <div class="products-container">
   <h1>Archibald Tonic</h1>
   <div class="product-container">
@@ -92,5 +104,6 @@ $query = new WP_Query([
 
     <?php endwhile; endif; ?>
   </div>
+</div>
 </div>
 <?php get_footer(); ?>
