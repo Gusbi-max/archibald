@@ -18,8 +18,7 @@ $query = new WP_Query([
       <option value="dog">test1</option>
       <option value="cat">test2</option>
   </select>
-  <input class="qty" type="text" placeholder="Rechercher" id="name" name="name" required
-        minlength="4" maxlength="8" size="10">
+  <?php get_product_search_form() ?>
   </div>
 <div class="shop-container">
 <div class="filter-container">
