@@ -3,26 +3,20 @@ const burgerBtn = document.querySelector('.button-burger');
 const mainMenu = document.querySelector('.menu');
 const burgerMenu = document.querySelector('.menu-burger');
 
-let menuOpen = false;
-
-menuBtn.addEventListener('click', () => {
-    if (!menuOpen) {
+const onMainMenu = () => {
+    mainMenu.classList.contains('open') ?
+        mainMenu.classList.remove('open') :
         mainMenu.classList.add('open');
-        menuOpen = true;
-    } else {
-        mainMenu.classList.remove('open');
-        menuOpen = false;
-    }
-});
+};
 
-burgerBtn.addEventListener('click', () => {
-    if (!menuOpen) {
-        burgerBtn.classList.add('open');
-        burgerMenu.classList.add('open');
-        menuOpen = true;
-    } else {
-        burgerBtn.classList.remove('open');
-        burgerMenu.classList.remove('open');
-        menuOpen = false;
-    }
-});
+const onBurgerMenu = () => {
+    burgerMenu.classList.contains('open') ?
+        (
+            burgerMenu.classList.remove('open'),
+            burgerBtn.classList.remove('open')
+        ) :
+        (
+            burgerMenu.classList.add('open'),
+            burgerBtn.classList.add('open')
+        );
+};

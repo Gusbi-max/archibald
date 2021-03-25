@@ -55,7 +55,7 @@ animation: openAfter 0.5s;
   --red: #DC241F;
   --yellow: #FFE18C;
 
-  --header-height: 120px;
+  --header-height: 96px;
   --margin-bottom: 16px;
   --padding-horizontal: 24px;
 }
@@ -74,7 +74,7 @@ body {
 }
 
 .container {
-  margin-top: var(--header-height);
+  margin-top: calc(16px + var(--header-height));
   display: grid;
   grid-template-columns: 24px 1fr 24px;
   grid-template-rows: auto;
@@ -938,6 +938,12 @@ footer {
   .banner-white {
       font-size: 24px;
       padding: 32px calc((100% - 1200px) / 2);
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .container {
+    grid-template-columns: 1fr 1440px 1fr;
   }
 }
 
