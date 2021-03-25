@@ -9,6 +9,7 @@ function montheme_supports() {
     'footer_menu1'  => 'Footer Menu 1',
     'footer_menu2'  => 'Footer Menu 2', 
   ) );
+  add_theme_support( 'woocommerce' );
 }
 
 
@@ -40,6 +41,7 @@ function montheme_wrapper_end() {
   echo '</div>';
 }
 
+/* Remove all tabs in single-product */
 function montheme_remove_product_tabs( $tabs ) {
   unset( $tabs[ 'reviews' ] );
   return $tabs;
@@ -64,6 +66,47 @@ function montheme_add_single_product_categories_label() {
   $t .= '</div>';
   
   echo $t;
+}
+
+function montheme_cross_sells() {
+
+  global $wpdb;
+  global $product;
+
+  $filtered_products = [];
+  
+  $products = $wpdb->get_results( "SELECT * FROM {$wpdb->prefix}posts WHERE post_type = 'product'" );
+
+
+
+  if (in_array(23, $product->category_ids)) {
+    $filtered_products = array_filter( $products, function( $product ) {
+      $terms = wp_get_post_terms ( $product->ID, 'product_cat' );
+      return !in_array( $terms[0]->term_id, [20, 23]  ) ;
+    });
+  } else {
+    $filtered_products = array_filter( $products, function( $product ) {
+      $terms = wp_get_post_terms ( $product->ID, 'product_cat' );
+      return in_array( $terms[0]->term_id, [23]  ) ;
+    });
+  }
+
+  foreach ( $filtered_products as $index => $p ) {
+    $filtered_products[$index] = wc_get_product( $p->ID );
+  } 
+
+  // echo '<h2>Pour accompagner</h2>';
+					
+  foreach ( $filtered_products as $filtered_product ) :
+
+    $post_object = get_post( $filtered_product->get_id() );
+
+    setup_postdata( $GLOBALS['post'] =& $post_object );
+
+    wc_get_template_part( 'content', 'product' );
+    
+  endforeach;
+
 }
 
 // Wrap product content into a div with "product-wrapper" class
@@ -95,4 +138,7 @@ remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_singl
 add_filter( 'woocommerce_product_tabs', 'montheme_remove_product_tabs' );
 
 add_action( 'woocommerce_after_single_product_summary', 'montheme_add_single_product_categories_label', 12);
+
+remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
+add_action( 'woocommerce_after_single_product_summary', 'montheme_cross_sells', 20 );
 
