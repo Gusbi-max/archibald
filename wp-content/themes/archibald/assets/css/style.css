@@ -51,12 +51,6 @@ body {
     grid-template-rows: auto;
 }
 
-.container-no-margin-top {
-    display: grid;
-    grid-template-columns: 24px 1fr 24px;
-    grid-template-rows: auto;
-}
-
 h1 {
     font-family: "AmericanTypwrterITCW01--731025";
     font-size: 26px;
