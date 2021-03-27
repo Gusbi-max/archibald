@@ -253,5 +253,8 @@
   background-color: white;
   padding: 1rem;
 }
+.filter-header{
+  display: none;
+}
 
 }
