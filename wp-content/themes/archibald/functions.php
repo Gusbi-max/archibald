@@ -68,7 +68,7 @@ function montheme_add_single_product_categories_label() {
   echo $t;
 }
 
-function montheme_cross_sells() {
+function montheme_custom_related_products() {
 
   global $wpdb;
   global $product;
@@ -76,8 +76,6 @@ function montheme_cross_sells() {
   $filtered_products = [];
   
   $products = $wpdb->get_results( "SELECT * FROM {$wpdb->prefix}posts WHERE post_type = 'product'" );
-
-
 
   if (in_array(23, $product->category_ids)) {
     $filtered_products = array_filter( $products, function( $product ) {
@@ -95,17 +93,33 @@ function montheme_cross_sells() {
     $filtered_products[$index] = wc_get_product( $p->ID );
   } 
 
-  // echo '<h2>Pour accompagner</h2>';
-					
-  foreach ( $filtered_products as $filtered_product ) :
+  ?>
 
-    $post_object = get_post( $filtered_product->get_id() );
+  <div id="related-products-wrapper">
 
-    setup_postdata( $GLOBALS['post'] =& $post_object );
+    <div class="slider-arrow slider-arrow-previous" onClick="onSliderArrow(-1)"><</div>
+    <div class="slider-arrow slider-arrow-next" onClick="onSliderArrow(1)">></div>
 
-    wc_get_template_part( 'content', 'product' );
-    
-  endforeach;
+    <ul id="related-products">
+
+    <?php
+
+    foreach ( $filtered_products as $filtered_product ) :
+
+      $post_object = get_post( $filtered_product->get_id() );
+
+      setup_postdata( $GLOBALS['post'] =& $post_object );
+
+      wc_get_template_part( 'content', 'product' );
+      
+    endforeach;
+
+    ?>
+
+    </ul>
+
+  </div>
+  <?php
 
 }
 
@@ -140,5 +154,5 @@ add_filter( 'woocommerce_product_tabs', 'montheme_remove_product_tabs' );
 add_action( 'woocommerce_after_single_product_summary', 'montheme_add_single_product_categories_label', 12);
 
 remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
-add_action( 'woocommerce_after_single_product_summary', 'montheme_cross_sells', 20 );
+add_action( 'woocommerce_after_single_product_summary', 'montheme_custom_related_products', 20 );
 
