@@ -5,6 +5,8 @@ Template Post Type: page
 */
 ?>
 
+<?php get_header(); ?>
+
 <?php
 $query = new WP_Query([
   'post_type' => 'product'
@@ -19,5 +21,6 @@ $query = new WP_Query([
   echo woocommerce_template_single_add_to_cart();
 ?>
 
-
 <?php endwhile; endif; ?>
+
+<?php get_footer(); ?>
