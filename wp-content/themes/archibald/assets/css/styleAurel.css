@@ -1,0 +1,241 @@
+/* Coordonnées */
+
+.contact-information {
+  text-align: center;
+  grid-column: 2;
+}
+
+.input-text, .country_to_state {
+  background-color: white;
+  border: solid 1px var(--blue);
+  border-radius: 0;
+  width: 100%;
+  padding: 12px;
+}
+
+.button-archibald {
+  background-color: var(--blue);
+  color: white;
+  border: none;
+  width: 65vw;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 20px;
+}
+
+.shipping, .billing, .buttons-ci {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.title-page-ci, .title-shipping, .title-billing {
+  margin-top: 25px;
+  text-align: left;
+}
+
+.title-tunnel {
+  display: none;
+}
+
+@media screen and (min-width: 850px) {
+  .shipping-and-billing {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .shipping, .billing {
+    width: 100%;
+  }
+
+  .shipping {
+    text-align: left;
+  }
+
+  .billing {
+    text-align: right;
+  }
+
+  .title-billing {
+    margin-left: 20%;
+  }
+
+  .input-text, .country_to_state {
+    background-color: white;
+    border: none;
+    border-bottom: solid 2px grey;
+    border-radius: 0;
+    width: 75%;
+    padding: 12px;
+  }
+
+  .country_to_state {
+    width: 79%;
+  }
+
+  .buttons-ci {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .button-archibald {
+    width: 30%;
+    margin-bottom: 0;
+    cursor: pointer;
+  }
+
+  .order-tunnel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .title-tunnel {
+    display: block;
+    font-size: 16px;
+    color: var(--blue);
+    width: 15%;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  .tunnel-step {
+    font-weight: bold;
+  }
+
+  .line-tunnel {
+    background-color: grey;
+    width: 15%;
+    height: 2px;
+  }
+
+  .title-page-ci {
+    display: none;
+  }
+}
+
+/* Paiement */
+
+.page-payment {
+  display: flex;
+  flex-direction: column;
+  grid-column: 2;
+  margin-top: 25px;
+}
+
+.payment {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 16px;
+}
+
+.wc_payment_methods {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  list-style: none;
+  list-style-image: none;
+}
+
+.wc_payment_methods li {
+  color: var(--blue);
+}
+
+.label-payment {
+  font-size: 20px;
+  color: var(--blue);
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.required-info {
+  color: orangered;
+}
+
+.valid-order {
+  text-align: left;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+#payment {
+  grid-column: 1 / 2;
+  grid-row:  1 / 2;
+}
+
+.shop_table {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  background-color: #f6f6f3;
+  color: var(--blue);
+  display: block;
+}
+
+.shop_table strong {
+  font-size: 20px;
+  padding-bottom: 6px;
+}
+
+.shop_table tbody {
+  padding: 8px;
+}
+
+.shop_table tr {
+  display: flex;
+  position: relative;
+  margin-bottom: 32px;
+}
+
+bdi {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.shop_table td {
+  width: 100%;
+  height: auto;
+  border: none;
+  align-items: flex-start;
+}
+
+.info-paycard {
+  display: flex;
+  flex-direction: row;
+}
+
+.input-order {
+  background-color: white;
+  border: none;
+  border-bottom: solid 2px grey;
+  border-radius: 0;
+  width: 90%;
+  padding: 12px;
+  margin-bottom: 30px;
+}
+
+.form-order {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.bloc-order {
+  border: solid 1px grey;
+  width: 85%;
+  padding: 25px;
+}
+
+.expiration-date {
+  width: 50%;
+}
+
+.cvv {
+  width: 50%;
+}

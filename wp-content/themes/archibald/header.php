@@ -29,7 +29,7 @@
         <a class="header-link text-white" href="<?= home_url('/boutique'); ?>">E-SHOP</a>
       </div>
       <div class="row button-basket">
-        <a class="header-link" href="#">
+        <a class="header-link" href="<?= home_url('/panier'); ?>">
           <img src="<?= get_template_directory_uri().'/assets/images/basket-white.png'?>" alt="Panier Archibald" class="basket-icon">
         </a>
       </div>
