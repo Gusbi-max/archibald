@@ -718,11 +718,10 @@ footer {
 .slider-arrow {
   width: 44px;
   height: 44px;
-  border-radius: 50%;
   background-color: var(--blue);
   color: var(--white);
   position: absolute;
-  top: calc(50% - 22px);
+  top: 30%;
   z-index: 99;
   display: flex;
   justify-content: center;
@@ -736,6 +735,7 @@ footer {
 
 .slider-arrow-next {
   right: 0;
+  display: none;
 }
 
 #related-products {

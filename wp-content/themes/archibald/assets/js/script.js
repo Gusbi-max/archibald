@@ -2,8 +2,11 @@ const menuBtn = document.querySelector('.button-menu');
 const burgerBtn = document.querySelector('.button-burger');
 const mainMenu = document.querySelector('.menu');
 const burgerMenu = document.querySelector('.menu-burger');
-const relatedProducts = document.getElementById('related-products');
 
+/* Related products slider variables */
+const relatedProducts = document.getElementById('related-products');
+const sliderArrowPrevious = document.getElementById('slider-arrow-previous');
+const sliderArrowNext = document.getElementById('slider-arrow-next');
 let currentProductIndex = 0;
 
 const onMainMenu = () => {
@@ -35,26 +38,44 @@ const getRelatedProductsSliderHeight = () => {
     console.log(sliderHeight);
 
     relatedProducts.style.height = `${sliderHeight}px`;
-}
+};
+
+const getProductsVisible = () => {
+    const productsWrapper = document.getElementById('related-products-wrapper');
+    if ( parseInt(productsWrapper.offsetWidth) < 600 ) {
+        return 1;
+    } else if ( parseInt(productsWrapper.offsetWidth) > 600 && parseInt(productsWrapper.offsetWidth) < 1000 ) {
+        return 2;
+    } else if ( parseInt(productsWrapper.offsetWidth) > 1000 && parseInt(productsWrapper.offsetWidth) < 1440 ) {
+        return 3;
+    } else {
+        return 4;
+    }
+};
 
 const onSliderArrow = (x) => {
+    currentProductIndex -= x;
+    sliderArrowPrevious.style.display = currentProductIndex < relatedProducts.children.length - 1 ? 'flex' : 'none';
+    sliderArrowNext.style.display = currentProductIndex > 0 ? 'flex' : 'none';
+    const productsVisible = getProductsVisible();
     const products = relatedProducts.children;
-    const translationValue = relatedProducts.offsetWidth / 3 * x;
+    const translationValue = relatedProducts.offsetWidth / productsVisible * x;
 
     for (let i = 0; i < products.length; i++) {
         const newLeftPosition = parseInt(products[i].style.left) + translationValue;
         products[i].style.left = `${newLeftPosition}px`;
     }
-}
+};
 
 const renderSlider = () => {
     const products = relatedProducts.children;
     const sliderWidth = relatedProducts.offsetWidth;
+    const productsVisible = getProductsVisible();
     for (let i = 0; i < products.length; i++) {
-        products[i].style.width = `${sliderWidth / 3}px`;
-        products[i].style.left = `${sliderWidth / 3 * i}px`;
+        products[i].style.width = `${sliderWidth / productsVisible}px`;
+        products[i].style.left = `${sliderWidth / productsVisible * i}px`;
     }
-}
+};
 
 renderSlider();
 

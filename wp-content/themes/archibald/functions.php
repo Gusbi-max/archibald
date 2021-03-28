@@ -97,8 +97,8 @@ function montheme_custom_related_products() {
 
   <div id="related-products-wrapper">
 
-    <div class="slider-arrow slider-arrow-previous" onClick="onSliderArrow(-1)"><</div>
-    <div class="slider-arrow slider-arrow-next" onClick="onSliderArrow(1)">></div>
+    <div class="slider-arrow slider-arrow-previous" id="slider-arrow-previous" onClick="onSliderArrow(-1)"><</div>
+    <div class="slider-arrow slider-arrow-next" id="slider-arrow-next" onClick="onSliderArrow(1)">></div>
 
     <ul id="related-products">
 
