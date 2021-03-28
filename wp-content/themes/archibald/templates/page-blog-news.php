@@ -6,6 +6,8 @@ Template Name: Page Blog & News
 
 <?php get_header(); ?>
 
+<div class="container">
+
 <?php
 
   if ( have_posts() ): while ( have_posts() ): the_post();
@@ -65,5 +67,7 @@ Template Name: Page Blog & News
   endwhile; endif;
 
 ?>
+
+</div>
 
 <?php get_footer(); ?>

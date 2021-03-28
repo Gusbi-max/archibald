@@ -1,7 +1,6 @@
 <?php 
   wp_footer(); 
 ?>
-  </div>
   <footer>
 	<div class="footer-section">
 		<div id="first-column">

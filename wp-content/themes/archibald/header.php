@@ -64,5 +64,3 @@
       ]);
     ?>
   </header>
-
-  <div class="container">
