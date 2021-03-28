@@ -6,11 +6,10 @@ Template Post Type: page
 ?>
 <?php get_header(); ?>
 <?php
-$query = new WP_Query([
-  'post_type' => 'product',
-  'product_cat' => 'archibald'
-]);
-
+  $query = new WP_Query([
+    'post_type' => 'product',
+    'product_cat' => 'archibald'
+  ]);
 ?>
 
 <img class="background-img" src="<?= get_template_directory_uri() . '/assets/images/backdrop-shop.png' ?>" alt="">
