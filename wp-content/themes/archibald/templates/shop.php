@@ -6,11 +6,10 @@ Template Post Type: page
 ?>
 <?php get_header(); ?>
 <?php
-$query = new WP_Query([
-  'post_type' => 'product',
-  'product_cat' => 'archibald'
-]);
-
+  $query = new WP_Query([
+    'post_type' => 'product',
+    'product_cat' => 'archibald'
+  ]);
 ?>
 <div class="container e-shop-container">
 
