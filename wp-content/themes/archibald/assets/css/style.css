@@ -1187,6 +1187,8 @@ footer {
 
 .woocommerce-ordering {
   grid-column: 2 / 3;
+  display: flex;
+  height: 50px;
 }
 
 .filters {
