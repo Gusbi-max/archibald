@@ -135,7 +135,7 @@ remove_action( 'woocommerce_sidebar', 'woocommerce_get_sidebar', 10 );
 
 // Remove the product title from the single product summary
 remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_title', 5 );
-remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_rating', 10 );
+// remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_rating', 10 );
 
 // Add the product title before the product summary and before the product images
 add_action( 'woocommerce_before_single_product_summary', 'woocommerce_template_single_title', 5 );
@@ -155,4 +155,3 @@ add_action( 'woocommerce_after_single_product_summary', 'montheme_add_single_pro
 
 remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
 add_action( 'woocommerce_after_single_product_summary', 'montheme_custom_related_products', 20 );
-
