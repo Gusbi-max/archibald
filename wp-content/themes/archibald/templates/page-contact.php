@@ -6,6 +6,8 @@ Template Name: Page Contact
 
 <?php get_header(); ?>
 
+<div class="container">
+
 <?php
 
   if ( have_posts() ): while ( have_posts() ): the_post();
@@ -25,5 +27,7 @@ Template Name: Page Contact
     <textarea name="message" placeholder="Rédigez votre message ici" rows="10" required></textarea>
     <input type="submit" value="Envoyer">
   </form>
+
+</div>
 
 <?php get_footer(); ?>

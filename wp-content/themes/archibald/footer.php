@@ -1,7 +1,6 @@
 <?php 
   wp_footer(); 
 ?>
-  </div>
   <footer>
 	<div class="footer-section">
 		<div id="first-column">
@@ -50,7 +49,7 @@
 		</div>
 	</div>
 
-	<div class="footer-section">
+	<div class="copyright">
 		<div>
 			<div class="line-grey"></div>
 			<p class="text-white text-center">&copy; 2021, Archibald Tonic</p>

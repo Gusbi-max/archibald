@@ -34,7 +34,7 @@ add_action('wp_enqueue_scripts', 'montheme_register_assets');
 /* Single product */
 
 function montheme_wrapper_start() {
-  echo '<div class="product-wrapper">';
+  echo '<div class="container">';
 }
 
 function montheme_wrapper_end() {
@@ -123,35 +123,92 @@ function montheme_custom_related_products() {
 
 }
 
-// Wrap product content into a div with "product-wrapper" class
+function new_loop_shop_per_page() {
+  global $wpdb;
+
+  $products = $wpdb->get_results( "SELECT * FROM {$wpdb->prefix}posts WHERE post_type = 'product'" );
+  return count($products);
+}
+
+function eshop_banner() {
+  ?>
+  <div class="eshop-banner" style="background-image: url('<?= get_template_directory_uri().'/assets/images/eshop-banner.png' ?>')"></div>
+  <?php
+}
+
+function montheme_products_list_wrapper() {
+
+  $filters = [
+    ['category_name' => 'Produits', 'filters' => ['Archibald', 'Spiritueux']],
+    ['category_name' => 'Catégories', 'filters' => ['Archibald Tonic', 'Gin', 'Autres Spiritueux', 'Garnish & Accessoires']],
+    ['category_name' => 'Saveurs', 'filters' => ['Frais & Floral', 'Sucré', 'Agrumes & Plantes', 'Genièvre et Puissance']],
+    ['category_name' => 'Caractéritiques', 'filters' => ['Cadeau', 'Bio']],
+  ];
+
+  ?>
+  <div class="products-list-wrapper">
+    <div class="filters">
+      <h2>Filtres</h2>
+      <?php
+        foreach ( $filters as $filter ) {
+          ?>
+          <h3 class="filter-title"><?= $filter['category_name'] ?></h3>
+          <?php foreach ( $filter['filters'] as $the_filter ) { ?>
+            <p>
+              <input type="checkbox" name="<?= $the_filter ?>" id="<?= $the_filter ?>">
+              <label for="<?= $the_filter ?>"><?= $the_filter ?></label>
+            </p>
+          <?php }
+        }
+
+      ?>
+    </div>
+
+  <?php
+}
+
+function montheme_products_list_wrapper_end() {
+  echo '</div>';
+}
+
+/* WooCommerce hooks */
 remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10 );
 remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10 );
+
+remove_action( 'woocommerce_sidebar', 'woocommerce_get_sidebar', 10 );
+
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_title', 5 );
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 30 );
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 );
+
+remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
+
+remove_action( 'woocommerce_after_shop_loop', 'woocommerce_pagination', 10 );
+
+
 
 add_action( 'woocommerce_before_main_content', 'montheme_wrapper_start', 10 );
 add_action( 'woocommerce_after_main_content', 'montheme_wrapper_end', 10 );
 
-// Remove sidebar
-remove_action( 'woocommerce_sidebar', 'woocommerce_get_sidebar', 10 );
-
-// Remove the product title from the single product summary
-remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_title', 5 );
-// remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_rating', 10 );
-
-// Add the product title before the product summary and before the product images
 add_action( 'woocommerce_before_single_product_summary', 'woocommerce_template_single_title', 5 );
 
-// Put the add_to_card before the product excerpt
-remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 30 );
 add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 15 );
 
-// Remove the categories
-remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 );
-// remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_sharing', 50 );
-
-// remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_product_data_tabs', 10 );  
-add_filter( 'woocommerce_product_tabs', 'montheme_remove_product_tabs' );
 
 add_action( 'woocommerce_after_single_product_summary', 'montheme_add_single_product_categories_label', 12);
-
-remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
 add_action( 'woocommerce_after_single_product_summary', 'montheme_custom_related_products', 20 );
+
+add_action( 'woocommerce_before_main_content', 'eshop_banner', 15 );
+
+add_action( 'woocommerce_before_shop_loop', 'montheme_products_list_wrapper', 40 );
+add_action( 'woocommerce_after_shop_loop', 'montheme_products_list_wrapper_end', 5 );
+
+/**
+ * Change the tabs to display in single product
+ */
+add_filter( 'woocommerce_product_tabs', 'montheme_remove_product_tabs' );
+
+/**
+ * Change the number of product per page
+ */
+add_filter( 'loop_shop_per_page', 'new_loop_shop_per_page', 20 );

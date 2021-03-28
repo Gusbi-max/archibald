@@ -8,6 +8,8 @@ Template Name: Page avec index
   get_header();
 ?>
 
+<div class="container">
+
 <?php
 
   global $post;
@@ -33,6 +35,8 @@ Template Name: Page avec index
   endwhile; endif;
 
 ?>
+
+</div>
 
 <?php
   get_footer();
