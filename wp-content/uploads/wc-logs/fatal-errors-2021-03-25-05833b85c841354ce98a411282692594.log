@@ -1,0 +1,150 @@
+2021-03-25T18:51:04+00:00 CRITICAL syntax error, unexpected end of file dans C:\wamp64\www\archibald\wp-content\themes\archibald\templates\shop.php à la ligne 178
+
+2021-03-25T18:52:06+00:00 CRITICAL syntax error, unexpected end of file dans C:\wamp64\www\archibald\wp-content\themes\archibald\templates\shop.php à la ligne 180
+
+2021-03-25T18:52:48+00:00 CRITICAL syntax error, unexpected end of file dans C:\wamp64\www\archibald\wp-content\themes\archibald\templates\shop.php à la ligne 178
+
+2021-03-25T18:53:00+00:00 CRITICAL syntax error, unexpected end of file dans C:\wamp64\www\archibald\wp-content\themes\archibald\templates\shop.php à la ligne 179
+
+2021-03-25T18:53:05+00:00 CRITICAL syntax error, unexpected end of file dans C:\wamp64\www\archibald\wp-content\themes\archibald\templates\shop.php à la ligne 178
+
+2021-03-25T18:53:20+00:00 CRITICAL syntax error, unexpected end of file dans C:\wamp64\www\archibald\wp-content\themes\archibald\templates\shop.php à la ligne 178
+
+2021-03-25T18:53:23+00:00 CRITICAL syntax error, unexpected end of file dans C:\wamp64\www\archibald\wp-content\themes\archibald\templates\shop.php à la ligne 178
+
+2021-03-25T18:53:30+00:00 CRITICAL syntax error, unexpected end of file dans C:\wamp64\www\archibald\wp-content\themes\archibald\templates\shop.php à la ligne 178
+
+2021-03-25T19:09:13+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function woocommerce_add_order_item(), 0 passed in C:\wamp64\www\archibald\wp-content\themes\archibald\templates\shop.php on line 33 and exactly 2 expected in C:\wamp64\www\archibald\wp-content\plugins\woocommerce\includes\wc-deprecated-functions.php:604
+Stack trace:
+#0 C:\wamp64\www\archibald\wp-content\themes\archibald\templates\shop.php(33): woocommerce_add_order_item()
+#1 C:\wamp64\www\archibald\wp-includes\template-loader.php(106): include('C:\\wamp64\\www\\a...')
+#2 C:\wamp64\www\archibald\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\a...')
+#3 C:\wamp64\www\archibald\index.php(17): require('C:\\wamp64\\www\\a...')
+#4 {main}
+  thrown dans C:\wamp64\www\archibald\wp-content\plugins\woocommerce\includes\wc-deprecated-functions.php à la ligne 604
+
+2021-03-25T19:18:50+00:00 CRITICAL Uncaught RuntimeException: Erreur lors de l’enregistrement de l’action : Erreur lors de l’enregistrement de l’action : Erreur de la base de données. in C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\migration\ActionScheduler_DBStoreMigrator.php:44
+Stack trace:
+#0 C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\data-stores\ActionScheduler_HybridStore.php(242): ActionScheduler_DBStoreMigrator->save_action(Object(ActionScheduler_Action), NULL)
+#1 C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_ActionFactory.php(177): ActionScheduler_HybridStore->save_action(Object(ActionScheduler_Action))
+#2 C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_ActionFactory.php(84): ActionScheduler_ActionFactory->store(Object(ActionScheduler_Action))
+#3 C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-schedu dans C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\migration\ActionScheduler_DBStoreMigrator.php à la ligne 44
+
+2021-03-25T19:18:54+00:00 CRITICAL Uncaught RuntimeException: Erreur lors de l’enregistrement de l’action : Erreur lors de l’enregistrement de l’action : Duplicata du champ '0' pour la clef 'PRIMARY' in C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\migration\ActionScheduler_DBStoreMigrator.php:44
+Stack trace:
+#0 C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\data-stores\ActionScheduler_HybridStore.php(242): ActionScheduler_DBStoreMigrator->save_action(Object(ActionScheduler_Action), NULL)
+#1 C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_ActionFactory.php(177): ActionScheduler_HybridStore->save_action(Object(ActionScheduler_Action))
+#2 C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_ActionFactory.php(84): ActionScheduler_ActionFactory->store(Object(ActionScheduler_Action))
+#3 C:\wamp64\www\archibald\wp-content\plugins\woocommerce\package dans C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\migration\ActionScheduler_DBStoreMigrator.php à la ligne 44
+
+2021-03-25T19:18:56+00:00 CRITICAL Uncaught RuntimeException: Erreur lors de l’enregistrement de l’action : Erreur lors de l’enregistrement de l’action : Duplicata du champ '0' pour la clef 'PRIMARY' in C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\migration\ActionScheduler_DBStoreMigrator.php:44
+Stack trace:
+#0 C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\data-stores\ActionScheduler_HybridStore.php(242): ActionScheduler_DBStoreMigrator->save_action(Object(ActionScheduler_Action), NULL)
+#1 C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_ActionFactory.php(177): ActionScheduler_HybridStore->save_action(Object(ActionScheduler_Action))
+#2 C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_ActionFactory.php(84): ActionScheduler_ActionFactory->store(Object(ActionScheduler_Action))
+#3 C:\wamp64\www\archibald\wp-content\plugins\woocommerce\package dans C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\migration\ActionScheduler_DBStoreMigrator.php à la ligne 44
+
+2021-03-25T19:19:10+00:00 CRITICAL Uncaught RuntimeException: Erreur lors de l’enregistrement de l’action : Erreur lors de l’enregistrement de l’action : Duplicata du champ '0' pour la clef 'PRIMARY' in C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\migration\ActionScheduler_DBStoreMigrator.php:44
+Stack trace:
+#0 C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\data-stores\ActionScheduler_HybridStore.php(242): ActionScheduler_DBStoreMigrator->save_action(Object(ActionScheduler_Action), NULL)
+#1 C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_ActionFactory.php(177): ActionScheduler_HybridStore->save_action(Object(ActionScheduler_Action))
+#2 C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_ActionFactory.php(84): ActionScheduler_ActionFactory->store(Object(ActionScheduler_Action))
+#3 C:\wamp64\www\archibald\wp-content\plugins\woocommerce\package dans C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\migration\ActionScheduler_DBStoreMigrator.php à la ligne 44
+
+2021-03-25T19:19:33+00:00 CRITICAL Uncaught RuntimeException: Erreur lors de l’enregistrement de l’action : Erreur lors de l’enregistrement de l’action : Duplicata du champ '0' pour la clef 'PRIMARY' in C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\migration\ActionScheduler_DBStoreMigrator.php:44
+Stack trace:
+#0 C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\data-stores\ActionScheduler_HybridStore.php(242): ActionScheduler_DBStoreMigrator->save_action(Object(ActionScheduler_Action), NULL)
+#1 C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_ActionFactory.php(177): ActionScheduler_HybridStore->save_action(Object(ActionScheduler_Action))
+#2 C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_ActionFactory.php(84): ActionScheduler_ActionFactory->store(Object(ActionScheduler_Action))
+#3 C:\wamp64\www\archibald\wp-content\plugins\woocommerce\package dans C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\migration\ActionScheduler_DBStoreMigrator.php à la ligne 44
+
+2021-03-25T19:19:37+00:00 CRITICAL Uncaught RuntimeException: Erreur lors de l’enregistrement de l’action : Erreur lors de l’enregistrement de l’action : Duplicata du champ '0' pour la clef 'PRIMARY' in C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\migration\ActionScheduler_DBStoreMigrator.php:44
+Stack trace:
+#0 C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\data-stores\ActionScheduler_HybridStore.php(242): ActionScheduler_DBStoreMigrator->save_action(Object(ActionScheduler_Action), NULL)
+#1 C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_ActionFactory.php(177): ActionScheduler_HybridStore->save_action(Object(ActionScheduler_Action))
+#2 C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_ActionFactory.php(84): ActionScheduler_ActionFactory->store(Object(ActionScheduler_Action))
+#3 C:\wamp64\www\archibald\wp-content\plugins\woocommerce\package dans C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\migration\ActionScheduler_DBStoreMigrator.php à la ligne 44
+
+2021-03-25T19:19:40+00:00 CRITICAL Uncaught RuntimeException: Erreur lors de l’enregistrement de l’action : Erreur lors de l’enregistrement de l’action : Duplicata du champ '0' pour la clef 'PRIMARY' in C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\migration\ActionScheduler_DBStoreMigrator.php:44
+Stack trace:
+#0 C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\data-stores\ActionScheduler_HybridStore.php(242): ActionScheduler_DBStoreMigrator->save_action(Object(ActionScheduler_Action), NULL)
+#1 C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_ActionFactory.php(177): ActionScheduler_HybridStore->save_action(Object(ActionScheduler_Action))
+#2 C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_ActionFactory.php(84): ActionScheduler_ActionFactory->store(Object(ActionScheduler_Action))
+#3 C:\wamp64\www\archibald\wp-content\plugins\woocommerce\package dans C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\migration\ActionScheduler_DBStoreMigrator.php à la ligne 44
+
+2021-03-25T19:19:44+00:00 CRITICAL Uncaught RuntimeException: Erreur lors de l’enregistrement de l’action : Erreur lors de l’enregistrement de l’action : Duplicata du champ '0' pour la clef 'PRIMARY' in C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\migration\ActionScheduler_DBStoreMigrator.php:44
+Stack trace:
+#0 C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\data-stores\ActionScheduler_HybridStore.php(242): ActionScheduler_DBStoreMigrator->save_action(Object(ActionScheduler_Action), NULL)
+#1 C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_ActionFactory.php(177): ActionScheduler_HybridStore->save_action(Object(ActionScheduler_Action))
+#2 C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_ActionFactory.php(84): ActionScheduler_ActionFactory->store(Object(ActionScheduler_Action))
+#3 C:\wamp64\www\archibald\wp-content\plugins\woocommerce\package dans C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\migration\ActionScheduler_DBStoreMigrator.php à la ligne 44
+
+2021-03-25T19:19:51+00:00 CRITICAL Uncaught RuntimeException: Erreur lors de l’enregistrement de l’action : Erreur lors de l’enregistrement de l’action : Duplicata du champ '0' pour la clef 'PRIMARY' in C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\migration\ActionScheduler_DBStoreMigrator.php:44
+Stack trace:
+#0 C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\data-stores\ActionScheduler_HybridStore.php(242): ActionScheduler_DBStoreMigrator->save_action(Object(ActionScheduler_Action), NULL)
+#1 C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_ActionFactory.php(177): ActionScheduler_HybridStore->save_action(Object(ActionScheduler_Action))
+#2 C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_ActionFactory.php(84): ActionScheduler_ActionFactory->store(Object(ActionScheduler_Action))
+#3 C:\wamp64\www\archibald\wp-content\plugins\woocommerce\package dans C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\migration\ActionScheduler_DBStoreMigrator.php à la ligne 44
+
+2021-03-25T19:19:53+00:00 CRITICAL Uncaught RuntimeException: Erreur lors de l’enregistrement de l’action : Erreur lors de l’enregistrement de l’action : Duplicata du champ '0' pour la clef 'PRIMARY' in C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\migration\ActionScheduler_DBStoreMigrator.php:44
+Stack trace:
+#0 C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\data-stores\ActionScheduler_HybridStore.php(242): ActionScheduler_DBStoreMigrator->save_action(Object(ActionScheduler_Action), NULL)
+#1 C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_ActionFactory.php(177): ActionScheduler_HybridStore->save_action(Object(ActionScheduler_Action))
+#2 C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_ActionFactory.php(84): ActionScheduler_ActionFactory->store(Object(ActionScheduler_Action))
+#3 C:\wamp64\www\archibald\wp-content\plugins\woocommerce\package dans C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\migration\ActionScheduler_DBStoreMigrator.php à la ligne 44
+
+2021-03-25T19:20:29+00:00 CRITICAL Uncaught RuntimeException: Erreur lors de l’enregistrement de l’action : Erreur lors de l’enregistrement de l’action : Duplicata du champ '0' pour la clef 'PRIMARY' in C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\migration\ActionScheduler_DBStoreMigrator.php:44
+Stack trace:
+#0 C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\data-stores\ActionScheduler_HybridStore.php(242): ActionScheduler_DBStoreMigrator->save_action(Object(ActionScheduler_Action), NULL)
+#1 C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_ActionFactory.php(177): ActionScheduler_HybridStore->save_action(Object(ActionScheduler_Action))
+#2 C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_ActionFactory.php(84): ActionScheduler_ActionFactory->store(Object(ActionScheduler_Action))
+#3 C:\wamp64\www\archibald\wp-content\plugins\woocommerce\package dans C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\migration\ActionScheduler_DBStoreMigrator.php à la ligne 44
+
+2021-03-25T19:20:32+00:00 CRITICAL Uncaught RuntimeException: Erreur lors de l’enregistrement de l’action : Erreur lors de l’enregistrement de l’action : Duplicata du champ '0' pour la clef 'PRIMARY' in C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\migration\ActionScheduler_DBStoreMigrator.php:44
+Stack trace:
+#0 C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\data-stores\ActionScheduler_HybridStore.php(242): ActionScheduler_DBStoreMigrator->save_action(Object(ActionScheduler_Action), NULL)
+#1 C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_ActionFactory.php(177): ActionScheduler_HybridStore->save_action(Object(ActionScheduler_Action))
+#2 C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_ActionFactory.php(84): ActionScheduler_ActionFactory->store(Object(ActionScheduler_Action))
+#3 C:\wamp64\www\archibald\wp-content\plugins\woocommerce\package dans C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\migration\ActionScheduler_DBStoreMigrator.php à la ligne 44
+
+2021-03-25T19:20:55+00:00 CRITICAL Uncaught RuntimeException: Erreur lors de l’enregistrement de l’action : Erreur lors de l’enregistrement de l’action : Duplicata du champ '0' pour la clef 'PRIMARY' in C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\migration\ActionScheduler_DBStoreMigrator.php:44
+Stack trace:
+#0 C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\data-stores\ActionScheduler_HybridStore.php(242): ActionScheduler_DBStoreMigrator->save_action(Object(ActionScheduler_Action), NULL)
+#1 C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_ActionFactory.php(177): ActionScheduler_HybridStore->save_action(Object(ActionScheduler_Action))
+#2 C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_ActionFactory.php(84): ActionScheduler_ActionFactory->store(Object(ActionScheduler_Action))
+#3 C:\wamp64\www\archibald\wp-content\plugins\woocommerce\package dans C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\migration\ActionScheduler_DBStoreMigrator.php à la ligne 44
+
+2021-03-25T19:21:05+00:00 CRITICAL Uncaught RuntimeException: Erreur lors de l’enregistrement de l’action : Erreur lors de l’enregistrement de l’action : Duplicata du champ '0' pour la clef 'PRIMARY' in C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\migration\ActionScheduler_DBStoreMigrator.php:44
+Stack trace:
+#0 C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\data-stores\ActionScheduler_HybridStore.php(242): ActionScheduler_DBStoreMigrator->save_action(Object(ActionScheduler_Action), NULL)
+#1 C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_ActionFactory.php(177): ActionScheduler_HybridStore->save_action(Object(ActionScheduler_Action))
+#2 C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_ActionFactory.php(84): ActionScheduler_ActionFactory->store(Object(ActionScheduler_Action))
+#3 C:\wamp64\www\archibald\wp-content\plugins\woocommerce\package dans C:\wamp64\www\archibald\wp-content\plugins\woocommerce\packages\action-scheduler\classes\migration\ActionScheduler_DBStoreMigrator.php à la ligne 44
+
+2021-03-25T19:34:03+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function woocommerce_add_order_item(), 0 passed in C:\wamp64\www\archibald\wp-content\themes\archibald\templates\shop.php on line 33 and exactly 2 expected in C:\wamp64\www\archibald\wp-content\plugins\woocommerce\includes\wc-deprecated-functions.php:604
+Stack trace:
+#0 C:\wamp64\www\archibald\wp-content\themes\archibald\templates\shop.php(33): woocommerce_add_order_item()
+#1 C:\wamp64\www\archibald\wp-includes\template-loader.php(106): include('C:\\wamp64\\www\\a...')
+#2 C:\wamp64\www\archibald\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\a...')
+#3 C:\wamp64\www\archibald\index.php(17): require('C:\\wamp64\\www\\a...')
+#4 {main}
+  thrown dans C:\wamp64\www\archibald\wp-content\plugins\woocommerce\includes\wc-deprecated-functions.php à la ligne 604
+
+2021-03-25T19:34:13+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function woocommerce_add_order_item(), 0 passed in C:\wamp64\www\archibald\wp-content\themes\archibald\templates\shop.php on line 33 and exactly 2 expected in C:\wamp64\www\archibald\wp-content\plugins\woocommerce\includes\wc-deprecated-functions.php:604
+Stack trace:
+#0 C:\wamp64\www\archibald\wp-content\themes\archibald\templates\shop.php(33): woocommerce_add_order_item()
+#1 C:\wamp64\www\archibald\wp-includes\template-loader.php(106): include('C:\\wamp64\\www\\a...')
+#2 C:\wamp64\www\archibald\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\a...')
+#3 C:\wamp64\www\archibald\index.php(17): require('C:\\wamp64\\www\\a...')
+#4 {main}
+  thrown dans C:\wamp64\www\archibald\wp-content\plugins\woocommerce\includes\wc-deprecated-functions.php à la ligne 604
+
+2021-03-25T19:34:16+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function woocommerce_add_order_item(), 0 passed in C:\wamp64\www\archibald\wp-content\themes\archibald\templates\shop.php on line 33 and exactly 2 expected in C:\wamp64\www\archibald\wp-content\plugins\woocommerce\includes\wc-deprecated-functions.php:604
+Stack trace:
+#0 C:\wamp64\www\archibald\wp-content\themes\archibald\templates\shop.php(33): woocommerce_add_order_item()
+#1 C:\wamp64\www\archibald\wp-includes\template-loader.php(106): include('C:\\wamp64\\www\\a...')
+#2 C:\wamp64\www\archibald\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\a...')
+#3 C:\wamp64\www\archibald\index.php(17): require('C:\\wamp64\\www\\a...')
+#4 {main}
+  thrown dans C:\wamp64\www\archibald\wp-content\plugins\woocommerce\includes\wc-deprecated-functions.php à la ligne 604
+
