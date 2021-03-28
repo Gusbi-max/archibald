@@ -1,0 +1,27 @@
+2021-03-24T19:52:14+00:00 CRITICAL syntax error, unexpected end of file dans C:\wamp64\www\archibald\wp-content\themes\archibald\functions.php à la ligne 145
+
+2021-03-24T19:52:20+00:00 CRITICAL syntax error, unexpected end of file dans C:\wamp64\www\archibald\wp-content\themes\archibald\functions.php à la ligne 145
+
+2021-03-24T19:52:41+00:00 CRITICAL syntax error, unexpected end of file dans C:\wamp64\www\archibald\wp-content\themes\archibald\functions.php à la ligne 147
+
+2021-03-24T19:52:46+00:00 CRITICAL syntax error, unexpected end of file dans C:\wamp64\www\archibald\wp-content\themes\archibald\functions.php à la ligne 147
+
+2021-03-24T19:53:08+00:00 CRITICAL syntax error, unexpected end of file dans C:\wamp64\www\archibald\wp-content\themes\archibald\functions.php à la ligne 147
+
+2021-03-24T19:53:17+00:00 CRITICAL syntax error, unexpected end of file dans C:\wamp64\www\archibald\wp-content\themes\archibald\functions.php à la ligne 141
+
+2021-03-24T20:45:52+00:00 CRITICAL Uncaught Error: Call to undefined method stdClass::list_attributes() in C:\wamp64\www\archibald\wp-content\themes\archibald\functions.php:91
+Stack trace:
+#0 C:\wamp64\www\archibald\wp-includes\class-wp-hook.php(292): montheme_cross_sells('')
+#1 C:\wamp64\www\archibald\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#2 C:\wamp64\www\archibald\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#3 C:\wamp64\www\archibald\wp-content\plugins\woocommerce\templates\content-single-product.php(72): do_action('woocommerce_aft...')
+#4 C:\wamp64\www\archibald\wp-includes\template.php(732): require('C:\\wamp64\\www\\a...')
+#5 C:\wamp64\www\archibald\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('C:\\wamp64\\www\\a...', false)
+#6 C:\wamp64\www\archibald\wp-content\plugins\woocommerce\templates\single-product.php(37): wc_get_template_part('content', 'single-product')
+#7 C:\wamp64\www\archibald\wp-includes\template-loader.php(106): include('C:\\wamp64\\www\\a... dans C:\wamp64\www\archibald\wp-content\themes\archibald\functions.php à la ligne 91
+
+2021-03-24T21:11:09+00:00 CRITICAL syntax error, unexpected 'dump' (T_STRING) dans C:\wamp64\www\archibald\wp-content\themes\archibald\functions.php à la ligne 89
+
+2021-03-24T21:30:11+00:00 CRITICAL syntax error, unexpected ')', expecting variable (T_VARIABLE) dans C:\wamp64\www\archibald\wp-content\themes\archibald\functions.php à la ligne 89
+

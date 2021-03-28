@@ -583,6 +583,12 @@ footer {
   margin-bottom: 100px;
 }
 
+.copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 .footer-logo {
   width: 140px;
   margin-left: 45px;
