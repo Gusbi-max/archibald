@@ -64,13 +64,13 @@ animation: openAfter 0.5s;
 * {
   margin: 0;
   padding: 0;
-  /* overflow-x: hidden; */
 }
 
 /* Mobile-first */
 /* Global */
 body { 
-  width: 100vw 
+  width: 100vw;
+  overflow-x: hidden; 
 }
 
 .container {
