@@ -6,7 +6,7 @@ Template Name: Page Coordonnées
 
 <?php get_header(); ?>
 
-<form name="checkout" method="post" class="checkout woocommerce-checkout" action="<?php echo esc_url( wc_get_checkout_url() ); ?>" enctype="multipart/form-data">
+
     <div class="contact-information">
         <div class="order-tunnel">
             <p class="title-tunnel tunnel-step">Coordonnées</p>
@@ -31,10 +31,10 @@ Template Name: Page Coordonnées
         </div>
 
         <div class="buttons-ci">
-            <button class="button-archibald margin-bottom">Continuer</button>
-            <button class="button-archibald">Précédemment</button>
+            <button onclick="location.href = '<?= home_url('/livraison'); ?>';" class="button-archibald margin-bottom">Continuer</button>
+            <button onclick="location.href = '<?= home_url('/panier'); ?>';" class="button-archibald">Précédemment</button>
         </div>
     </div>
-</form>
+
 
 <?php get_footer(); ?>

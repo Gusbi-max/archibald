@@ -14,8 +14,10 @@ function montheme_supports() {
 
 function montheme_register_assets() {
   wp_register_style('style_css', get_template_directory_uri() . '/assets/css/style.css');
+  wp_register_style('style_aurel_css', get_template_directory_uri() . '/assets/css/styleAurel.css');
   wp_register_script('script_js', get_template_directory_uri() . '/assets/js/script.js',false ,false ,true);
   wp_enqueue_style('style_css');
+  wp_enqueue_style('style_aurel_css');
   wp_enqueue_script('script_js');
 }
 
