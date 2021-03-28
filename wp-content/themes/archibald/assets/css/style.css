@@ -27,8 +27,8 @@
   }
 }
 
-.button-burger .open .lines-burger::after {
-transform: translateY(12px);
+.open .lines-burger::after {
+transform: translateY(8px);
 transform: rotate(-45deg);
 animation: openAfter 0.5s;
 }
@@ -1054,8 +1054,8 @@ footer {
     }
 
     .lines-burger {
-      width: 35px;
-      height: 2px;
+      width: 32px;
+      height: 1px;
       background: var(--blue);
       transition: all .5s ease-in-out;
     }
@@ -1064,18 +1064,18 @@ footer {
     .lines-burger::after {
       content: '';
       position: absolute;
-      width: 35px;
-      height: 2px;
+      width: 32px;
+      height: 1px;
       background: var(--blue);
       transition: all .5s ease-in-out;
     }
 
     .lines-burger::before {
-      transform: translateY(-12px);
+      transform: translateY(-8px);
     }
 
     .lines-burger::after {
-      transform: translateY(12px);
+      transform: translateY(8px);
     }
 
     .menu-burger {
