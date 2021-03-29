@@ -1,0 +1,34 @@
+2021-03-29T13:05:32+00:00 CRITICAL Uncaught Error: Call to undefined method stdClass::get_id() in C:\wamp64\www\archibald\wp-content\themes\archibald\woocommerce\archive-product.php:57
+Stack trace:
+#0 C:\wamp64\www\archibald\wp-includes\template-loader.php(106): include()
+#1 C:\wamp64\www\archibald\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\a...')
+#2 C:\wamp64\www\archibald\index.php(17): require('C:\\wamp64\\www\\a...')
+#3 {main}
+  thrown dans C:\wamp64\www\archibald\wp-content\themes\archibald\woocommerce\archive-product.php à la ligne 57
+
+2021-03-29T13:11:56+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wc_get_loop_prop(), 0 passed in C:\wamp64\www\archibald\wp-content\themes\archibald\woocommerce\archive-product.php on line 47 and at least 1 expected in C:\wamp64\www\archibald\wp-content\plugins\woocommerce\includes\wc-template-functions.php:219
+Stack trace:
+#0 C:\wamp64\www\archibald\wp-content\themes\archibald\woocommerce\archive-product.php(47): wc_get_loop_prop()
+#1 C:\wamp64\www\archibald\wp-includes\template-loader.php(106): include('C:\\wamp64\\www\\a...')
+#2 C:\wamp64\www\archibald\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\a...')
+#3 C:\wamp64\www\archibald\index.php(17): require('C:\\wamp64\\www\\a...')
+#4 {main}
+  thrown dans C:\wamp64\www\archibald\wp-content\plugins\woocommerce\includes\wc-template-functions.php à la ligne 219
+
+2021-03-29T13:12:01+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wc_get_loop_prop(), 0 passed in C:\wamp64\www\archibald\wp-content\themes\archibald\woocommerce\archive-product.php on line 47 and at least 1 expected in C:\wamp64\www\archibald\wp-content\plugins\woocommerce\includes\wc-template-functions.php:219
+Stack trace:
+#0 C:\wamp64\www\archibald\wp-content\themes\archibald\woocommerce\archive-product.php(47): wc_get_loop_prop()
+#1 C:\wamp64\www\archibald\wp-includes\template-loader.php(106): include('C:\\wamp64\\www\\a...')
+#2 C:\wamp64\www\archibald\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\a...')
+#3 C:\wamp64\www\archibald\index.php(17): require('C:\\wamp64\\www\\a...')
+#4 {main}
+  thrown dans C:\wamp64\www\archibald\wp-content\plugins\woocommerce\includes\wc-template-functions.php à la ligne 219
+
+2021-03-29T13:15:24+00:00 CRITICAL Uncaught Error: Call to undefined method stdClass::get_id() in C:\wamp64\www\archibald\wp-content\themes\archibald\woocommerce\archive-product.php:59
+Stack trace:
+#0 C:\wamp64\www\archibald\wp-includes\template-loader.php(106): include()
+#1 C:\wamp64\www\archibald\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\a...')
+#2 C:\wamp64\www\archibald\index.php(17): require('C:\\wamp64\\www\\a...')
+#3 {main}
+  thrown dans C:\wamp64\www\archibald\wp-content\themes\archibald\woocommerce\archive-product.php à la ligne 59
+

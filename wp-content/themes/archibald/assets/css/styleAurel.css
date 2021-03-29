@@ -1,11 +1,10 @@
 /* Coordonnées */
 
 .contact-information {
-  text-align: center;
   grid-column: 2;
 }
 
-.input-text, .country_to_state {
+.woocommerce-input-wrapper .input-text, .country_to_state {
   background-color: white;
   border: solid 1px var(--blue);
   border-radius: 0;
@@ -51,15 +50,7 @@
     text-align: left;
   }
 
-  .billing {
-    text-align: right;
-  }
-
-  .title-billing {
-    margin-left: 20%;
-  }
-
-  .input-text, .country_to_state {
+  .woocommerce-input-wrapper .input-text, .country_to_state {
     background-color: white;
     border: none;
     border-bottom: solid 2px grey;
@@ -238,4 +229,21 @@
 
 .cvv {
   width: 50%;
+}
+
+.shipping-and-billing .input-text {
+  text-align: left;
+}
+
+.billing .input-text, .billing .country_to_state {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+#billing_country_field {
+  text-align: right;
+}
+
+.title-billing {
+  margin-left: 20%
 }
