@@ -1,0 +1,17 @@
+#adminmenu .menu-icon-generic.toplevel_page_freshchat-settings-handle div.wp-menu-image{
+  left: 10px;
+  position: relative;
+  top: 8px;
+  background: transparent url('../assets/freshchat_wp.png') no-repeat !important;
+}
+
+#adminmenu .menu-icon-generic.toplevel_page_freshchat-settings-handle a:hover div.wp-menu-image{
+  background: transparent url('../assets/freshchat_wp_blue.png') no-repeat !important;
+}
+#adminmenu .menu-icon-generic.toplevel_page_freshchat-settings-handle a.current div.wp-menu-image{
+  background: transparent url('../assets/freshchat_wp_white.png') no-repeat !important;
+}
+
+#adminmenu .menu-icon-generic.toplevel_page_freshchat-settings-handle div.wp-menu-image:before {
+    content: "";
+}

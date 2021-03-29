@@ -249,6 +249,20 @@ function montheme_products_list_wrapper_end() {
   echo '</div>';
 }
 
+function add_search_input() {
+  ?>
+    <input type="text" placeholder="&#x1F50D; Rechercher">
+  <?php
+}
+
+function woocommerce_before_shop_loop_wrapper() {
+  echo '<div class="filters-input">';
+}
+
+function woocommerce_before_shop_loop_wrapper_end() {
+  echo '</div>';
+}
+
 /* WooCommerce hooks */
 remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10 );
 remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10 );
@@ -278,7 +292,10 @@ add_action( 'woocommerce_after_single_product_summary', 'montheme_custom_related
 
 add_action( 'woocommerce_before_main_content', 'eshop_banner', 15 );
 
-add_action( 'woocommerce_before_shop_loop', 'montheme_products_list_wrapper', 40 );
+add_action( 'woocommerce_before_shop_loop', 'woocommerce_before_shop_loop_wrapper', 25 );
+add_action( 'woocommerce_before_shop_loop', 'add_search_input', 35 );
+add_action( 'woocommerce_before_shop_loop', 'woocommerce_before_shop_loop_wrapper_end', 40 );
+add_action( 'woocommerce_before_shop_loop', 'montheme_products_list_wrapper', 50 );
 add_action( 'woocommerce_after_shop_loop', 'montheme_products_list_wrapper_end', 5 );
 
 /**

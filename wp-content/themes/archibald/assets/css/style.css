@@ -76,7 +76,6 @@ body {
 .container {
   width: 100vw;
   margin-top: var(--header-height);
-  margin-bottom: 16px;
   display: grid;
   grid-template-columns: 24px 1fr 24px;
   grid-template-rows: auto;
@@ -1187,9 +1186,9 @@ footer {
 }
 
 .woocommerce-ordering {
-  grid-column: 2 / 3;
   display: flex;
-  height: 50px;
+  margin-right: 32px;
+  height: 44px;
 }
 
 .filters {
@@ -1287,4 +1286,18 @@ label {
   width: 10%;
 }
 
+.filters-input {
+  grid-column: 2 / 3;
+  display: flex;
+  height: 32px;
+}
+
+.filters-input input {
+  height: 100%;
+  padding: 4px;
+  border: solid 2px var(--blue);
+  border-radius: 0;
+  background-color: var(--white);
+  font-size: 12px;
+}
 
